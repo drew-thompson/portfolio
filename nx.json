@@ -19,6 +19,9 @@
     },
     "api-interface": {
       "tags": []
+    },
+    "core-config": {
+      "tags": ["platform:frontend", "type:util"]
     }
   }
 }

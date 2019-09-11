@@ -198,6 +198,21 @@
           }
         }
       }
+    },
+    "core-config": {
+      "root": "libs/core/config",
+      "sourceRoot": "libs/core/config/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/core/config/tsconfig.lib.json"],
+            "exclude": ["**/node_modules/**", "!libs/core/config/**"]
+          }
+        }
+      }
     }
   },
   "cli": {

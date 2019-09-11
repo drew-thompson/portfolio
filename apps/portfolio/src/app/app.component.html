@@ -1,8 +1,5 @@
 <div style="text-align:center">
-  <h1>Welcome to portfolio!</h1>
-  <img
-    width="450"
-    src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png"
-  />
+  <h1 translate>welcome</h1>
+  <img width="450" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" />
 </div>
-<div>Message: {{ hello$ | async | json }}</div>
+<div translate [translateParams]="{ message: hello$ | async | json }">message</div>
