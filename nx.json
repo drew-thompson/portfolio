@@ -22,6 +22,9 @@
     },
     "core-config": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "common-material": {
+      "tags": ["platform:frontend", "type:util"]
     }
   }
 }

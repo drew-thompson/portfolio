@@ -213,6 +213,22 @@
           }
         }
       }
+    },
+    "common-material": {
+      "projectType": "library",
+      "root": "libs/common/material",
+      "sourceRoot": "libs/common/material/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/common/material/tsconfig.lib.json"],
+            "exclude": ["**/node_modules/**", "!libs/common/material/**"]
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

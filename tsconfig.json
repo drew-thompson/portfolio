@@ -17,7 +17,8 @@
     "baseUrl": ".",
     "paths": {
       "@portfolio/api-interface": ["libs/api-interface/src/index.ts"],
-      "@portfolio/core/config": ["libs/core/config/src/index.ts"]
+      "@portfolio/core/config": ["libs/core/config/src/index.ts"],
+      "@portfolio/common/material": ["libs/common/material/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
