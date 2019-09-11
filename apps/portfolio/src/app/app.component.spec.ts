@@ -1,3 +1,4 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { async, TestBed } from '@angular/core/testing';
 import {
@@ -5,7 +6,9 @@ import {
   TranslateModule,
   TranslateService
 } from '@ngx-translate/core';
-import { HttpLoaderFactory } from '@portfolio/core/config';
+import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
+import { environment } from '../environments/environment';
+import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
 describe('AppComponent', () => {
@@ -14,6 +17,7 @@ describe('AppComponent', () => {
       declarations: [AppComponent],
       imports: [
         HttpClientModule,
+        AppRoutingModule,
         TranslateModule.forRoot({
           loader: {
             provide: TranslateLoader,
@@ -22,7 +26,11 @@ describe('AppComponent', () => {
           }
         })
       ],
-      providers: [TranslateService]
+      providers: [
+        { provide: APP_BASE_HREF, useValue: '/' },
+        { provide: ENVIRONMENT, useValue: environment },
+        TranslateService
+      ]
     }).compileComponents();
   }));
 

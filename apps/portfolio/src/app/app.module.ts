@@ -1,3 +1,4 @@
+import { APP_BASE_HREF } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
@@ -23,7 +24,10 @@ import { AppComponent } from './app.component';
       }
     })
   ],
-  providers: [{ provide: ENVIRONMENT, useValue: environment }],
+  providers: [
+    { provide: APP_BASE_HREF, useValue: '/' },
+    { provide: ENVIRONMENT, useValue: environment }
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
