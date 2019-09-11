@@ -229,6 +229,87 @@
         }
       },
       "schematics": {}
+    },
+    "common-ui-buttons": {
+      "projectType": "library",
+      "root": "libs/common/ui/buttons",
+      "sourceRoot": "libs/common/ui/buttons/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/buttons/tsconfig.lib.json",
+              "libs/common/ui/buttons/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/ui/buttons/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/buttons/jest.config.js",
+            "tsConfig": "libs/common/ui/buttons/tsconfig.spec.json",
+            "setupFile": "libs/common/ui/buttons/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "common-ui-header": {
+      "projectType": "library",
+      "root": "libs/common/ui/header",
+      "sourceRoot": "libs/common/ui/header/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/header/tsconfig.lib.json",
+              "libs/common/ui/header/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/ui/header/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/header/jest.config.js",
+            "tsConfig": "libs/common/ui/header/tsconfig.spec.json",
+            "setupFile": "libs/common/ui/header/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "common-ui-footer": {
+      "projectType": "library",
+      "root": "libs/common/ui/footer",
+      "sourceRoot": "libs/common/ui/footer/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/footer/tsconfig.lib.json",
+              "libs/common/ui/footer/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/ui/footer/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/footer/jest.config.js",
+            "tsConfig": "libs/common/ui/footer/tsconfig.spec.json",
+            "setupFile": "libs/common/ui/footer/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

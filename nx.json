@@ -25,6 +25,15 @@
     },
     "common-material": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "common-ui-buttons": {
+      "tags": ["platform:frontend", "type:ui"]
+    },
+    "common-ui-header": {
+      "tags": ["platform:frontend", "type:ui"]
+    },
+    "common-ui-footer": {
+      "tags": ["platform:frontend", "type:ui"]
     }
   }
 }
