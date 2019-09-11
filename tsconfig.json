@@ -21,7 +21,8 @@
       "@portfolio/common/material": ["libs/common/material/src/index.ts"],
       "@portfolio/common/ui/buttons": ["libs/common/ui/buttons/src/index.ts"],
       "@portfolio/common/ui/header": ["libs/common/ui/header/src/index.ts"],
-      "@portfolio/common/ui/footer": ["libs/common/ui/footer/src/index.ts"]
+      "@portfolio/common/ui/footer": ["libs/common/ui/footer/src/index.ts"],
+      "@portfolio/shared": ["libs/shared/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

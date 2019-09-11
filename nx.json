@@ -34,6 +34,9 @@
     },
     "common-ui-footer": {
       "tags": ["platform:frontend", "type:ui"]
+    },
+    "shared": {
+      "tags": ["platform:frontend", "type:util"]
     }
   }
 }
