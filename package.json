@@ -6,7 +6,7 @@
     "ng": "ng",
     "start": "concurrently \"npm run serve:api\" \"npm run serve:portfolio\"",
     "build": "ng build",
-    "test": "ng test --passWithNoTests",
+    "test": "npm run affected:test",
     "lint": "nx lint && ng lint",
     "e2e": "ng e2e",
     "serve:api": "ng s api",
