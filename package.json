@@ -1,6 +1,6 @@
 {
   "name": "portfolio",
-  "version": "0.0.0",
+  "version": "0.0.0-development",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
@@ -24,7 +24,8 @@
     "update:check": "ng update",
     "workspace-schematic": "nx workspace-schematic",
     "dep-graph": "nx dep-graph",
-    "help": "nx help"
+    "help": "nx help",
+    "semantic-release": "semantic-release"
   },
   "private": true,
   "dependencies": {
@@ -68,6 +69,11 @@
     "tslint": "~5.11.0",
     "typescript": "~3.4.5",
     "prettier": "1.16.4",
-    "@angular/cli": "8.0.0"
+    "@angular/cli": "8.0.0",
+    "semantic-release": "^15.13.24"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/drew-thompson/portfolio.git"
   }
 }
