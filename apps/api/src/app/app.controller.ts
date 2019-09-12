@@ -1,4 +1,4 @@
-import { Controller, Get } from '@nestjs/common';
+import { Controller, Get, Post } from '@nestjs/common';
 
 import { Message } from '@portfolio/api-interface';
 
@@ -9,7 +9,12 @@ export class AppController {
   constructor(private readonly appService: AppService) {}
 
   @Get('hello')
-  getData(): Message {
-    return this.appService.getData();
+  getData(): { data: Message } {
+    return { data: this.appService.getData() };
+  }
+
+  @Post('hello')
+  fakerPost(): { data: Message } {
+    return { data: this.appService.getData() };
   }
 }

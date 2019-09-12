@@ -14,10 +14,27 @@
       ],
       "rewrites": [
         {
+          "source": "/drewisalegend/us-central1/api",
+          "function": "api"
+        },
+        {
+          "source": "/drewisalegend/us-central1/api/**",
+          "function": "api"
+        },
+        {
           "source": "**",
           "destination": "/index.html"
         }
+      ],
+      "predeploy": [
+        "npm run build"
       ]
     }
-  ]
+  ],
+  "functions": {
+    "predeploy": [
+      "npm run build:api"
+    ],
+    "source": "/"
+  }
 }

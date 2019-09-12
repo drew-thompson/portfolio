@@ -1,0 +1,1633 @@
+[debug] [2019-09-12T02:13:10.785Z] ----------------------------------------------------------------------
+[debug] [2019-09-12T02:13:10.788Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2019-09-12T02:13:10.788Z] CLI Version:   7.3.2
+[debug] [2019-09-12T02:13:10.788Z] Platform:      darwin
+[debug] [2019-09-12T02:13:10.788Z] Node Version:  v10.16.0
+[debug] [2019-09-12T02:13:10.789Z] Time:          Wed Sep 11 2019 19:13:10 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-09-12T02:13:10.789Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-12T02:13:10.798Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-12T02:13:10.798Z] > authorizing via signed-in user
+[debug] [2019-09-12T02:13:10.798Z] [iam] checking project drewisalegend for permissions ["firebase.projects.get"]
+[debug] [2019-09-12T02:13:10.800Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/drewisalegend:testIamPermissions  
+
+[debug] [2019-09-12T02:13:12.284Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-12T02:13:12.286Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/drewisalegend  
+ 
+[debug] [2019-09-12T02:13:13.630Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Using node@10 from host.
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/drew/Documents/Github/portfolio/" for Cloud Functions...
+[debug] [2019-09-12T02:13:14.203Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:13:14.203Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:13:14.206Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:13:14.207Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:13:14.208Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53427   - 09/11/2019, 7:13:14 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53427   - 09/11/2019, 7:13:14 PM   [InstanceLoader] AppModule dependencies initialized +28ms
+[info] >  [Nest] 53427   - 09/11/2019, 7:13:14 PM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 53427   - 09/11/2019, 7:13:14 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53427   - 09/11/2019, 7:13:14 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53427   - 09/11/2019, 7:13:14 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[info] >  Listening at http://localhost:3333/api
+[debug] [2019-09-12T02:13:20.318Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T02:13:21.626Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:13:21.626Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:13:21.630Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:13:21.631Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:13:21.632Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53436   - 09/11/2019, 7:13:22 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53436   - 09/11/2019, 7:13:22 PM   [InstanceLoader] AppModule dependencies initialized +28ms
+[info] >  [Nest] 53436   - 09/11/2019, 7:13:22 PM   [RoutesResolver] AppController {/api/}: +16ms
+[info] >  [Nest] 53436   - 09/11/2019, 7:13:22 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 53436   - 09/11/2019, 7:13:22 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53436   - 09/11/2019, 7:13:22 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[info] >  Listening at http://localhost:3333/api
+[debug] [2019-09-12T02:13:22.661Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T02:13:22.661Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T02:13:23.963Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:13:23.964Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:13:23.966Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:13:23.967Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:13:23.968Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53444   - 09/11/2019, 7:13:24 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53444   - 09/11/2019, 7:13:24 PM   [InstanceLoader] AppModule dependencies initialized +25ms
+[info] >  [Nest] 53444   - 09/11/2019, 7:13:24 PM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 53444   - 09/11/2019, 7:13:24 PM   [RouterExplorer] Mapped {/hello, GET} route +3ms
+[info] >  [Nest] 53444   - 09/11/2019, 7:13:24 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 53444   - 09/11/2019, 7:13:24 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:14:06.494Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T02:14:07.782Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:14:07.782Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:14:07.785Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:14:07.786Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:14:07.787Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53458   - 09/11/2019, 7:14:08 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53458   - 09/11/2019, 7:14:08 PM   [InstanceLoader] AppModule dependencies initialized +25ms
+[info] >  [Nest] 53458   - 09/11/2019, 7:14:08 PM   [RoutesResolver] AppController {/api/}: +16ms
+[info] >  [Nest] 53458   - 09/11/2019, 7:14:08 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53458   - 09/11/2019, 7:14:08 PM   [RouterExplorer] Mapped {/, POST} route +3ms
+[info] >  [Nest] 53458   - 09/11/2019, 7:14:08 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:14:21.028Z] ----------------------------------------------------------------------
+[debug] [2019-09-12T02:14:21.030Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2019-09-12T02:14:21.030Z] CLI Version:   7.3.2
+[debug] [2019-09-12T02:14:21.030Z] Platform:      darwin
+[debug] [2019-09-12T02:14:21.030Z] Node Version:  v10.16.0
+[debug] [2019-09-12T02:14:21.031Z] Time:          Wed Sep 11 2019 19:14:21 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-09-12T02:14:21.031Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-12T02:14:21.039Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-12T02:14:21.040Z] > authorizing via signed-in user
+[debug] [2019-09-12T02:14:21.040Z] [iam] checking project drewisalegend for permissions ["firebase.projects.get"]
+[debug] [2019-09-12T02:14:21.042Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/drewisalegend:testIamPermissions  
+
+[debug] [2019-09-12T02:14:21.170Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-12T02:14:21.172Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/drewisalegend  
+ 
+[debug] [2019-09-12T02:14:21.335Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Using node@10 from host.
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/drew/Documents/Github/portfolio/" for Cloud Functions...
+[debug] [2019-09-12T02:14:21.929Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:14:21.929Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:14:21.932Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:14:21.933Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:14:21.935Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53485   - 09/11/2019, 7:14:22 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53485   - 09/11/2019, 7:14:22 PM   [InstanceLoader] AppModule dependencies initialized +28ms
+[info] >  [Nest] 53485   - 09/11/2019, 7:14:22 PM   [RoutesResolver] AppController {/api/}: +16ms
+[info] >  [Nest] 53485   - 09/11/2019, 7:14:22 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53485   - 09/11/2019, 7:14:22 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 53485   - 09/11/2019, 7:14:22 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:16:13.156Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T02:16:14.534Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:16:14.535Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:16:14.543Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:16:14.545Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:16:14.546Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53543   - 09/11/2019, 7:16:15 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53543   - 09/11/2019, 7:16:15 PM   [InstanceLoader] AppModule dependencies initialized +32ms
+[info] >  [Nest] 53543   - 09/11/2019, 7:16:15 PM   [RoutesResolver] AppController {/api/}: +17ms
+[info] >  [Nest] 53543   - 09/11/2019, 7:16:15 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53543   - 09/11/2019, 7:16:15 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53543   - 09/11/2019, 7:16:15 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:16:15.810Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T02:16:15.810Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T02:16:17.134Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:16:17.135Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:16:17.139Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:16:17.139Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:16:17.140Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53551   - 09/11/2019, 7:16:17 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53551   - 09/11/2019, 7:16:17 PM   [InstanceLoader] AppModule dependencies initialized +25ms
+[info] >  [Nest] 53551   - 09/11/2019, 7:16:17 PM   [RoutesResolver] AppController {/api/}: +10ms
+[info] >  [Nest] 53551   - 09/11/2019, 7:16:17 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53551   - 09/11/2019, 7:16:17 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53551   - 09/11/2019, 7:16:17 PM   [NestApplication] Nest application successfully started +8ms
+[info] >  Nest Ready
+[info] >  Listening at http://localhost:3333/api
+[debug] [2019-09-12T02:16:25.061Z] ----------------------------------------------------------------------
+[debug] [2019-09-12T02:16:25.063Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2019-09-12T02:16:25.063Z] CLI Version:   7.3.2
+[debug] [2019-09-12T02:16:25.063Z] Platform:      darwin
+[debug] [2019-09-12T02:16:25.064Z] Node Version:  v10.16.0
+[debug] [2019-09-12T02:16:25.064Z] Time:          Wed Sep 11 2019 19:16:25 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-09-12T02:16:25.064Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-12T02:16:25.073Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-12T02:16:25.073Z] > authorizing via signed-in user
+[debug] [2019-09-12T02:16:25.073Z] [iam] checking project drewisalegend for permissions ["firebase.projects.get"]
+[debug] [2019-09-12T02:16:25.075Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/drewisalegend:testIamPermissions  
+
+[debug] [2019-09-12T02:16:25.217Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-12T02:16:25.220Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/drewisalegend  
+ 
+[debug] [2019-09-12T02:16:25.400Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Using node@10 from host.
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/drew/Documents/Github/portfolio/" for Cloud Functions...
+[debug] [2019-09-12T02:16:26.117Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:16:26.118Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:16:26.125Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:16:26.125Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:16:26.126Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53565   - 09/11/2019, 7:16:26 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53565   - 09/11/2019, 7:16:26 PM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 53565   - 09/11/2019, 7:16:26 PM   [RoutesResolver] AppController {/api/}: +19ms
+[info] >  [Nest] 53565   - 09/11/2019, 7:16:26 PM   [RouterExplorer] Mapped {/hello, GET} route +6ms
+[info] >  [Nest] 53565   - 09/11/2019, 7:16:26 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53565   - 09/11/2019, 7:16:26 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[info] >  Listening at http://localhost:3333/api
+[debug] [2019-09-12T02:19:24.178Z] ----------------------------------------------------------------------
+[debug] [2019-09-12T02:19:24.180Z] Command:       /usr/local/bin/node /usr/local/bin/firebase serve --only functions
+[debug] [2019-09-12T02:19:24.180Z] CLI Version:   7.3.2
+[debug] [2019-09-12T02:19:24.180Z] Platform:      darwin
+[debug] [2019-09-12T02:19:24.180Z] Node Version:  v10.16.0
+[debug] [2019-09-12T02:19:24.181Z] Time:          Wed Sep 11 2019 19:19:24 GMT-0700 (Pacific Daylight Time)
+[debug] [2019-09-12T02:19:24.181Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2019-09-12T02:19:24.191Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2019-09-12T02:19:24.192Z] > authorizing via signed-in user
+[debug] [2019-09-12T02:19:24.192Z] [iam] checking project drewisalegend for permissions ["firebase.projects.get"]
+[debug] [2019-09-12T02:19:24.194Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/drewisalegend:testIamPermissions  
+
+[debug] [2019-09-12T02:19:24.436Z] <<< HTTP RESPONSE 200
+[debug] [2019-09-12T02:19:24.439Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/drewisalegend  
+ 
+[debug] [2019-09-12T02:19:24.603Z] <<< HTTP RESPONSE 200
+[info] ✔  functions: Using node@10 from host.
+[info] ✔  functions: Emulator started at http://localhost:5000
+[info] i  functions: Watching "/Users/drew/Documents/Github/portfolio/" for Cloud Functions...
+[debug] [2019-09-12T02:19:25.199Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:19:25.199Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:19:25.201Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:19:25.202Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:19:25.203Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53703   - 09/11/2019, 7:19:25 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53703   - 09/11/2019, 7:19:25 PM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 53703   - 09/11/2019, 7:19:25 PM   [RoutesResolver] AppController {/api/}: +14ms
+[info] >  [Nest] 53703   - 09/11/2019, 7:19:25 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53703   - 09/11/2019, 7:19:25 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53703   - 09/11/2019, 7:19:25 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[info] >  Listening at http://localhost:3333/api
+[debug] [2019-09-12T02:19:47.429Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T02:19:48.944Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:19:48.944Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:19:48.948Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:19:48.956Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:19:48.956Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53716   - 09/11/2019, 7:19:49 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53716   - 09/11/2019, 7:19:49 PM   [InstanceLoader] AppModule dependencies initialized +38ms
+[info] >  [Nest] 53716   - 09/11/2019, 7:19:49 PM   [RoutesResolver] AppController {/api/}: +18ms
+[info] >  [Nest] 53716   - 09/11/2019, 7:19:49 PM   [RouterExplorer] Mapped {/hello, GET} route +6ms
+[info] >  [Nest] 53716   - 09/11/2019, 7:19:49 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 53716   - 09/11/2019, 7:19:49 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[info] >  Listening at http://localhost:3333/api
+[debug] [2019-09-12T02:19:50.469Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T02:19:50.469Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T02:19:51.765Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:19:51.766Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:19:51.769Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:19:51.770Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:19:51.771Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53726   - 09/11/2019, 7:19:52 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53726   - 09/11/2019, 7:19:52 PM   [InstanceLoader] AppModule dependencies initialized +35ms
+[info] >  [Nest] 53726   - 09/11/2019, 7:19:52 PM   [RoutesResolver] AppController {/api/}: +16ms
+[info] >  [Nest] 53726   - 09/11/2019, 7:19:52 PM   [RouterExplorer] Mapped {/hello, GET} route +7ms
+[info] >  [Nest] 53726   - 09/11/2019, 7:19:52 PM   [RouterExplorer] Mapped {/, POST} route +3ms
+[info] >  [Nest] 53726   - 09/11/2019, 7:19:52 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:26:49.707Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T02:26:51.029Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:26:51.030Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:26:51.033Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:26:51.034Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:26:51.035Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53908   - 09/11/2019, 7:26:51 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:251:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52380:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53908   - 09/11/2019, 7:26:51 PM   [InstanceLoader] AppModule dependencies initialized +38ms
+[info] >  [Nest] 53908   - 09/11/2019, 7:26:51 PM   [RoutesResolver] AppController {/api/}: +24ms
+[info] >  [Nest] 53908   - 09/11/2019, 7:26:51 PM   [RouterExplorer] Mapped {/hello, GET} route +9ms
+[info] >  [Nest] 53908   - 09/11/2019, 7:26:51 PM   [RouterExplorer] Mapped {/, POST} route +3ms
+[info] >  [Nest] 53908   - 09/11/2019, 7:26:51 PM   [NestApplication] Nest application successfully started +9ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:26:52.758Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T02:26:52.758Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T02:26:52.857Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T02:26:54.211Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:26:54.212Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:26:54.215Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:26:54.216Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:26:54.217Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53923   - 09/11/2019, 7:26:54 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53923   - 09/11/2019, 7:26:54 PM   [InstanceLoader] AppModule dependencies initialized +31ms
+[info] >  [Nest] 53923   - 09/11/2019, 7:26:54 PM   [RoutesResolver] AppController {/api/}: +23ms
+[info] >  [Nest] 53923   - 09/11/2019, 7:26:54 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 53923   - 09/11/2019, 7:26:54 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 53923   - 09/11/2019, 7:26:54 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:27:36.777Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.module.ts changed, reloading triggers
+[debug] [2019-09-12T02:27:38.149Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:27:38.149Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:27:38.153Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:27:38.154Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:27:38.155Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53949   - 09/11/2019, 7:27:38 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53949   - 09/11/2019, 7:27:38 PM   [InstanceLoader] AppModule dependencies initialized +37ms
+[info] >  [Nest] 53949   - 09/11/2019, 7:27:38 PM   [RoutesResolver] AppController {/api/}: +23ms
+[info] >  [Nest] 53949   - 09/11/2019, 7:27:38 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 53949   - 09/11/2019, 7:27:38 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 53949   - 09/11/2019, 7:27:38 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:28:09.098Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.spec.ts changed, reloading triggers
+[debug] [2019-09-12T02:28:10.520Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:28:10.521Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:28:10.527Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:28:10.528Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:28:10.529Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53969   - 09/11/2019, 7:28:11 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53969   - 09/11/2019, 7:28:11 PM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 53969   - 09/11/2019, 7:28:11 PM   [RoutesResolver] AppController {/api/}: +16ms
+[info] >  [Nest] 53969   - 09/11/2019, 7:28:11 PM   [RouterExplorer] Mapped {/hello, GET} route +6ms
+[info] >  [Nest] 53969   - 09/11/2019, 7:28:11 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53969   - 09/11/2019, 7:28:11 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:28:41.312Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:28:42.664Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:28:42.665Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:28:42.669Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:28:42.670Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:28:42.671Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53986   - 09/11/2019, 7:28:43 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53986   - 09/11/2019, 7:28:43 PM   [InstanceLoader] AppModule dependencies initialized +28ms
+[info] >  [Nest] 53986   - 09/11/2019, 7:28:43 PM   [RoutesResolver] AppController {/api/}: +18ms
+[info] >  [Nest] 53986   - 09/11/2019, 7:28:43 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 53986   - 09/11/2019, 7:28:43 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53986   - 09/11/2019, 7:28:43 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:29:08.216Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:29:09.552Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:29:09.553Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:29:09.558Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:29:09.559Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:29:09.559Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 53999   - 09/11/2019, 7:29:10 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 53999   - 09/11/2019, 7:29:10 PM   [InstanceLoader] AppModule dependencies initialized +37ms
+[info] >  [Nest] 53999   - 09/11/2019, 7:29:10 PM   [RoutesResolver] AppController {/api/}: +19ms
+[info] >  [Nest] 53999   - 09/11/2019, 7:29:10 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 53999   - 09/11/2019, 7:29:10 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 53999   - 09/11/2019, 7:29:10 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:30:05.275Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:30:06.596Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:30:06.597Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:30:06.600Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:30:06.601Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:30:06.602Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54037   - 09/11/2019, 7:30:07 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54037   - 09/11/2019, 7:30:07 PM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54037   - 09/11/2019, 7:30:07 PM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 54037   - 09/11/2019, 7:30:07 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54037   - 09/11/2019, 7:30:07 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54037   - 09/11/2019, 7:30:07 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:30:40.479Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:30:41.810Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:30:41.811Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:30:41.814Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:30:41.815Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:30:41.816Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54057   - 09/11/2019, 7:30:42 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54057   - 09/11/2019, 7:30:42 PM   [InstanceLoader] AppModule dependencies initialized +32ms
+[info] >  [Nest] 54057   - 09/11/2019, 7:30:42 PM   [RoutesResolver] AppController {/api/}: +18ms
+[info] >  [Nest] 54057   - 09/11/2019, 7:30:42 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54057   - 09/11/2019, 7:30:42 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54057   - 09/11/2019, 7:30:42 PM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:30:45.042Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:30:46.369Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:30:46.370Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:30:46.374Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:30:46.374Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:30:46.375Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54065   - 09/11/2019, 7:30:46 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54065   - 09/11/2019, 7:30:46 PM   [InstanceLoader] AppModule dependencies initialized +35ms
+[info] >  [Nest] 54065   - 09/11/2019, 7:30:46 PM   [RoutesResolver] AppController {/api/}: +18ms
+[info] >  [Nest] 54065   - 09/11/2019, 7:30:46 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54065   - 09/11/2019, 7:30:46 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54065   - 09/11/2019, 7:30:46 PM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:31:10.476Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:31:10.576Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:31:11.941Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:31:11.941Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:31:11.944Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:31:11.945Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:31:11.946Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54085   - 09/11/2019, 7:31:12 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54085   - 09/11/2019, 7:31:12 PM   [InstanceLoader] AppModule dependencies initialized +32ms
+[info] >  [Nest] 54085   - 09/11/2019, 7:31:12 PM   [RoutesResolver] AppController {/api/}: +17ms
+[info] >  [Nest] 54085   - 09/11/2019, 7:31:12 PM   [RouterExplorer] Mapped {/hello, GET} route +7ms
+[info] >  [Nest] 54085   - 09/11/2019, 7:31:12 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54085   - 09/11/2019, 7:31:12 PM   [NestApplication] Nest application successfully started +5ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:31:34.729Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:31:36.072Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:31:36.073Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:31:36.076Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:31:36.077Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:31:36.077Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54095   - 09/11/2019, 7:31:36 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54095   - 09/11/2019, 7:31:36 PM   [InstanceLoader] AppModule dependencies initialized +28ms
+[info] >  [Nest] 54095   - 09/11/2019, 7:31:36 PM   [RoutesResolver] AppController {/api/}: +22ms
+[info] >  [Nest] 54095   - 09/11/2019, 7:31:36 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54095   - 09/11/2019, 7:31:36 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54095   - 09/11/2019, 7:31:36 PM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:31:39.334Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:31:40.653Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:31:40.654Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:31:40.657Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:31:40.658Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:31:40.659Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54103   - 09/11/2019, 7:31:41 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54103   - 09/11/2019, 7:31:41 PM   [InstanceLoader] AppModule dependencies initialized +25ms
+[info] >  [Nest] 54103   - 09/11/2019, 7:31:41 PM   [RoutesResolver] AppController {/api/}: +9ms
+[info] >  [Nest] 54103   - 09/11/2019, 7:31:41 PM   [RouterExplorer] Mapped {/hello, GET} route +9ms
+[info] >  [Nest] 54103   - 09/11/2019, 7:31:41 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54103   - 09/11/2019, 7:31:41 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:31:42.681Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:31:44.025Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:31:44.026Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:31:44.030Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:31:44.031Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:31:44.032Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54112   - 09/11/2019, 7:31:44 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54112   - 09/11/2019, 7:31:44 PM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54112   - 09/11/2019, 7:31:44 PM   [RoutesResolver] AppController {/api/}: +21ms
+[info] >  [Nest] 54112   - 09/11/2019, 7:31:44 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54112   - 09/11/2019, 7:31:44 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54112   - 09/11/2019, 7:31:44 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:31:49.453Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:31:50.783Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:31:50.784Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:31:50.787Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:31:50.788Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:31:50.789Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54120   - 09/11/2019, 7:31:51 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54120   - 09/11/2019, 7:31:51 PM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 54120   - 09/11/2019, 7:31:51 PM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 54120   - 09/11/2019, 7:31:51 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54120   - 09/11/2019, 7:31:51 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54120   - 09/11/2019, 7:31:51 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:32:22.610Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:32:23.982Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:32:23.983Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:32:23.989Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:32:23.990Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:32:23.991Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54140   - 09/11/2019, 7:32:24 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54140   - 09/11/2019, 7:32:24 PM   [InstanceLoader] AppModule dependencies initialized +37ms
+[info] >  [Nest] 54140   - 09/11/2019, 7:32:24 PM   [RoutesResolver] AppController {/api/}: +22ms
+[info] >  [Nest] 54140   - 09/11/2019, 7:32:24 PM   [RouterExplorer] Mapped {/hello, GET} route +8ms
+[info] >  [Nest] 54140   - 09/11/2019, 7:32:24 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54140   - 09/11/2019, 7:32:24 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:32:36.964Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:32:38.319Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:32:38.320Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:32:38.323Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:32:38.324Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:32:38.325Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54150   - 09/11/2019, 7:32:38 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54150   - 09/11/2019, 7:32:38 PM   [InstanceLoader] AppModule dependencies initialized +37ms
+[info] >  [Nest] 54150   - 09/11/2019, 7:32:38 PM   [RoutesResolver] AppController {/api/}: +23ms
+[info] >  [Nest] 54150   - 09/11/2019, 7:32:38 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54150   - 09/11/2019, 7:32:38 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54150   - 09/11/2019, 7:32:38 PM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:32:39.931Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:32:41.229Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:32:41.229Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:32:41.232Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:32:41.233Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:32:41.234Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54158   - 09/11/2019, 7:32:41 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54158   - 09/11/2019, 7:32:41 PM   [InstanceLoader] AppModule dependencies initialized +33ms
+[info] >  [Nest] 54158   - 09/11/2019, 7:32:41 PM   [RoutesResolver] AppController {/api/}: +20ms
+[info] >  [Nest] 54158   - 09/11/2019, 7:32:41 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54158   - 09/11/2019, 7:32:41 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54158   - 09/11/2019, 7:32:41 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:32:58.569Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:32:59.903Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:32:59.903Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:32:59.907Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:32:59.907Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:32:59.908Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54183   - 09/11/2019, 7:33:00 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54183   - 09/11/2019, 7:33:00 PM   [InstanceLoader] AppModule dependencies initialized +37ms
+[info] >  [Nest] 54183   - 09/11/2019, 7:33:00 PM   [RoutesResolver] AppController {/api/}: +23ms
+[info] >  [Nest] 54183   - 09/11/2019, 7:33:00 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54183   - 09/11/2019, 7:33:00 PM   [RouterExplorer] Mapped {/, POST} route +3ms
+[info] >  [Nest] 54183   - 09/11/2019, 7:33:00 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:33:12.035Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:33:13.312Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:33:13.312Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:33:13.317Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:33:13.318Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:13.319Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:13.356Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[info] >  [Nest] 54201   - 09/11/2019, 7:33:13 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54201   - 09/11/2019, 7:33:13 PM   [InstanceLoader] AppModule dependencies initialized +34ms
+[info] >  [Nest] 54201   - 09/11/2019, 7:33:13 PM   [RoutesResolver] AppController {/api/}: +18ms
+[info] >  [Nest] 54201   - 09/11/2019, 7:33:13 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54201   - 09/11/2019, 7:33:13 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54201   - 09/11/2019, 7:33:13 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:33:14.673Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:33:14.674Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:33:14.678Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:33:14.679Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:14.680Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54202   - 09/11/2019, 7:33:15 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54202   - 09/11/2019, 7:33:15 PM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 54202   - 09/11/2019, 7:33:15 PM   [RoutesResolver] AppController {/api/}: +14ms
+[info] >  [Nest] 54202   - 09/11/2019, 7:33:15 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54202   - 09/11/2019, 7:33:15 PM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54202   - 09/11/2019, 7:33:15 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:33:31.585Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:33:32.945Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:33:32.946Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:33:32.949Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:33:32.950Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:32.952Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54214   - 09/11/2019, 7:33:33 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54214   - 09/11/2019, 7:33:33 PM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 54214   - 09/11/2019, 7:33:33 PM   [RoutesResolver] AppController {/api/}: +21ms
+[info] >  [Nest] 54214   - 09/11/2019, 7:33:33 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54214   - 09/11/2019, 7:33:33 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54214   - 09/11/2019, 7:33:33 PM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:33:38.126Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:33:39.463Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:33:39.464Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:33:39.468Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:33:39.469Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:39.469Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54222   - 09/11/2019, 7:33:39 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54222   - 09/11/2019, 7:33:39 PM   [InstanceLoader] AppModule dependencies initialized +30ms
+[info] >  [Nest] 54222   - 09/11/2019, 7:33:40 PM   [RoutesResolver] AppController {/api/}: +17ms
+[info] >  [Nest] 54222   - 09/11/2019, 7:33:40 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54222   - 09/11/2019, 7:33:40 PM   [RouterExplorer] Mapped {/, POST} route +3ms
+[info] >  [Nest] 54222   - 09/11/2019, 7:33:40 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:33:41.075Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:33:41.175Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:33:42.505Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:33:42.506Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:33:42.510Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:33:42.511Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:42.512Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54233   - 09/11/2019, 7:33:42 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54233   - 09/11/2019, 7:33:43 PM   [InstanceLoader] AppModule dependencies initialized +28ms
+[info] >  [Nest] 54233   - 09/11/2019, 7:33:43 PM   [RoutesResolver] AppController {/api/}: +10ms
+[info] >  [Nest] 54233   - 09/11/2019, 7:33:43 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54233   - 09/11/2019, 7:33:43 PM   [RouterExplorer] Mapped {/, POST} route +7ms
+[info] >  [Nest] 54233   - 09/11/2019, 7:33:43 PM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:33:56.759Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T02:33:58.098Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:33:58.099Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:33:58.103Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:33:58.103Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:33:58.104Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54242   - 09/11/2019, 7:33:58 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54242   - 09/11/2019, 7:33:58 PM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 54242   - 09/11/2019, 7:33:58 PM   [RoutesResolver] AppController {/api/}: +19ms
+[info] >  [Nest] 54242   - 09/11/2019, 7:33:58 PM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54242   - 09/11/2019, 7:33:58 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54242   - 09/11/2019, 7:33:58 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:34:14.986Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.html changed, reloading triggers
+[debug] [2019-09-12T02:34:16.301Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:34:16.302Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:34:16.306Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:34:16.307Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:34:16.307Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54263   - 09/11/2019, 7:34:16 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54263   - 09/11/2019, 7:34:16 PM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 54263   - 09/11/2019, 7:34:16 PM   [RoutesResolver] AppController {/api/}: +17ms
+[info] >  [Nest] 54263   - 09/11/2019, 7:34:16 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54263   - 09/11/2019, 7:34:16 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54263   - 09/11/2019, 7:34:16 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:34:27.596Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.html changed, reloading triggers
+[debug] [2019-09-12T02:34:28.897Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:34:28.898Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:34:28.901Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:34:28.902Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:34:28.902Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54272   - 09/11/2019, 7:34:29 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54272   - 09/11/2019, 7:34:29 PM   [InstanceLoader] AppModule dependencies initialized +36ms
+[info] >  [Nest] 54272   - 09/11/2019, 7:34:29 PM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 54272   - 09/11/2019, 7:34:29 PM   [RouterExplorer] Mapped {/hello, GET} route +7ms
+[info] >  [Nest] 54272   - 09/11/2019, 7:34:29 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54272   - 09/11/2019, 7:34:29 PM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T02:34:37.214Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.html changed, reloading triggers
+[debug] [2019-09-12T02:34:38.600Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T02:34:38.601Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T02:34:38.604Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T02:34:38.606Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T02:34:38.607Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54288   - 09/11/2019, 7:34:39 PM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54288   - 09/11/2019, 7:34:39 PM   [InstanceLoader] AppModule dependencies initialized +34ms
+[info] >  [Nest] 54288   - 09/11/2019, 7:34:39 PM   [RoutesResolver] AppController {/api/}: +16ms
+[info] >  [Nest] 54288   - 09/11/2019, 7:34:39 PM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54288   - 09/11/2019, 7:34:39 PM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54288   - 09/11/2019, 7:34:39 PM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:22:04.901Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:22:06.813Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:22:06.813Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:22:06.816Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:22:06.817Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:22:06.818Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54666   - 09/12/2019, 7:22:08 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54666   - 09/12/2019, 7:22:08 AM   [InstanceLoader] AppModule dependencies initialized +36ms
+[info] >  [Nest] 54666   - 09/12/2019, 7:22:08 AM   [RoutesResolver] AppController {/api/}: +21ms
+[info] >  [Nest] 54666   - 09/12/2019, 7:22:08 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54666   - 09/12/2019, 7:22:08 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54666   - 09/12/2019, 7:22:08 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:23:30.506Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:23:31.803Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:23:31.804Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:23:31.807Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:23:31.808Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:23:31.808Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54704   - 09/12/2019, 7:23:32 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54704   - 09/12/2019, 7:23:32 AM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 54704   - 09/12/2019, 7:23:32 AM   [RoutesResolver] AppController {/api/}: +13ms
+[info] >  [Nest] 54704   - 09/12/2019, 7:23:32 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54704   - 09/12/2019, 7:23:32 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54704   - 09/12/2019, 7:23:32 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:23:45.943Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:23:47.230Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:23:47.230Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:23:47.237Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:23:47.237Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:23:47.237Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54723   - 09/12/2019, 7:23:47 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54723   - 09/12/2019, 7:23:47 AM   [InstanceLoader] AppModule dependencies initialized +24ms
+[info] >  [Nest] 54723   - 09/12/2019, 7:23:47 AM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 54723   - 09/12/2019, 7:23:47 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54723   - 09/12/2019, 7:23:47 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54723   - 09/12/2019, 7:23:47 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:24:48.840Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:24:50.128Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:24:50.128Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:24:50.133Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:24:50.134Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:24:50.134Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54754   - 09/12/2019, 7:24:50 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54754   - 09/12/2019, 7:24:50 AM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 54754   - 09/12/2019, 7:24:50 AM   [RoutesResolver] AppController {/api/}: +12ms
+[info] >  [Nest] 54754   - 09/12/2019, 7:24:50 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54754   - 09/12/2019, 7:24:50 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54754   - 09/12/2019, 7:24:50 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:25:00.614Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:25:01.911Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:25:01.913Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:25:01.916Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:25:01.917Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:25:01.918Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54764   - 09/12/2019, 7:25:02 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54764   - 09/12/2019, 7:25:02 AM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 54764   - 09/12/2019, 7:25:02 AM   [RoutesResolver] AppController {/api/}: +13ms
+[info] >  [Nest] 54764   - 09/12/2019, 7:25:02 AM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54764   - 09/12/2019, 7:25:02 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54764   - 09/12/2019, 7:25:02 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:25:04.031Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:25:05.301Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:25:05.302Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:25:05.305Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:25:05.305Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:25:05.306Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54772   - 09/12/2019, 7:25:05 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54772   - 09/12/2019, 7:25:05 AM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54772   - 09/12/2019, 7:25:05 AM   [RoutesResolver] AppController {/api/}: +14ms
+[info] >  [Nest] 54772   - 09/12/2019, 7:25:05 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54772   - 09/12/2019, 7:25:05 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54772   - 09/12/2019, 7:25:05 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:25:22.051Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:25:23.355Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:25:23.356Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:25:23.359Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:25:23.360Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:25:23.361Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54782   - 09/12/2019, 7:25:23 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54782   - 09/12/2019, 7:25:23 AM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54782   - 09/12/2019, 7:25:23 AM   [RoutesResolver] AppController {/api/}: +14ms
+[info] >  [Nest] 54782   - 09/12/2019, 7:25:23 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54782   - 09/12/2019, 7:25:23 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54782   - 09/12/2019, 7:25:23 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:27:56.885Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T14:27:58.244Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:27:58.245Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:27:58.248Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:27:58.249Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:27:58.250Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54869   - 09/12/2019, 7:27:58 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54869   - 09/12/2019, 7:27:58 AM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 54869   - 09/12/2019, 7:27:58 AM   [RoutesResolver] AppController {/api/}: +15ms
+[info] >  [Nest] 54869   - 09/12/2019, 7:27:58 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54869   - 09/12/2019, 7:27:58 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54869   - 09/12/2019, 7:27:58 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:27:59.453Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T14:27:59.453Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T14:28:00.724Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:28:00.725Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:28:00.728Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:28:00.729Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:28:00.730Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54877   - 09/12/2019, 7:28:01 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54877   - 09/12/2019, 7:28:01 AM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 54877   - 09/12/2019, 7:28:01 AM   [RoutesResolver] AppController {/}: +15ms
+[info] >  [Nest] 54877   - 09/12/2019, 7:28:01 AM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54877   - 09/12/2019, 7:28:01 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54877   - 09/12/2019, 7:28:01 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:29:48.476Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T14:29:49.762Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:29:49.762Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:29:49.765Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:29:49.766Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:29:49.767Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54936   - 09/12/2019, 7:29:50 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54936   - 09/12/2019, 7:29:50 AM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54936   - 09/12/2019, 7:29:50 AM   [RoutesResolver] AppController {/}: +13ms
+[info] >  [Nest] 54936   - 09/12/2019, 7:29:50 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54936   - 09/12/2019, 7:29:50 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54936   - 09/12/2019, 7:29:50 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:29:58.646Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/app/app.controller.ts changed, reloading triggers
+[debug] [2019-09-12T14:29:59.919Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:29:59.920Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:29:59.923Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:29:59.924Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:29:59.924Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54948   - 09/12/2019, 7:30:00 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54948   - 09/12/2019, 7:30:00 AM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 54948   - 09/12/2019, 7:30:00 AM   [RoutesResolver] AppController {/}: +13ms
+[info] >  [Nest] 54948   - 09/12/2019, 7:30:00 AM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 54948   - 09/12/2019, 7:30:00 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54948   - 09/12/2019, 7:30:00 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:30:14.024Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:30:15.324Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:30:15.324Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:30:15.327Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:30:15.328Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:30:15.329Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54960   - 09/12/2019, 7:30:15 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54960   - 09/12/2019, 7:30:15 AM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54960   - 09/12/2019, 7:30:15 AM   [RoutesResolver] AppController {/}: +14ms
+[info] >  [Nest] 54960   - 09/12/2019, 7:30:15 AM   [RouterExplorer] Mapped {/hello, GET} route +3ms
+[info] >  [Nest] 54960   - 09/12/2019, 7:30:15 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54960   - 09/12/2019, 7:30:15 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:30:54.744Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:30:56.045Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:30:56.045Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:30:56.048Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:30:56.049Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:30:56.050Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54980   - 09/12/2019, 7:30:56 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54980   - 09/12/2019, 7:30:56 AM   [InstanceLoader] AppModule dependencies initialized +25ms
+[info] >  [Nest] 54980   - 09/12/2019, 7:30:56 AM   [RoutesResolver] AppController {/}: +14ms
+[info] >  [Nest] 54980   - 09/12/2019, 7:30:56 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54980   - 09/12/2019, 7:30:56 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 54980   - 09/12/2019, 7:30:56 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:31:08.231Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:31:09.525Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:31:09.525Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:31:09.529Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:31:09.530Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:31:09.531Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 54989   - 09/12/2019, 7:31:09 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 54989   - 09/12/2019, 7:31:09 AM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 54989   - 09/12/2019, 7:31:10 AM   [RoutesResolver] AppController {/}: +13ms
+[info] >  [Nest] 54989   - 09/12/2019, 7:31:10 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 54989   - 09/12/2019, 7:31:10 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 54989   - 09/12/2019, 7:31:10 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:32:08.837Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/main.ts changed, reloading triggers
+[debug] [2019-09-12T14:32:10.188Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:32:10.189Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:32:10.194Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:32:10.195Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:32:10.196Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 55023   - 09/12/2019, 7:32:10 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 55023   - 09/12/2019, 7:32:10 AM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 55023   - 09/12/2019, 7:32:10 AM   [RoutesResolver] AppController {/}: +17ms
+[info] >  [Nest] 55023   - 09/12/2019, 7:32:10 AM   [RouterExplorer] Mapped {/hello, GET} route +7ms
+[info] >  [Nest] 55023   - 09/12/2019, 7:32:10 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 55023   - 09/12/2019, 7:32:10 AM   [NestApplication] Nest application successfully started +5ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:32:11.029Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T14:32:11.029Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T14:32:11.131Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T14:32:12.423Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:32:12.424Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:32:12.427Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:32:12.428Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:32:12.428Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 55033   - 09/12/2019, 7:32:12 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 55033   - 09/12/2019, 7:32:12 AM   [InstanceLoader] AppModule dependencies initialized +24ms
+[info] >  [Nest] 55033   - 09/12/2019, 7:32:12 AM   [RoutesResolver] AppController {/api/}: +14ms
+[info] >  [Nest] 55033   - 09/12/2019, 7:32:12 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 55033   - 09/12/2019, 7:32:12 AM   [RouterExplorer] Mapped {/, POST} route +1ms
+[info] >  [Nest] 55033   - 09/12/2019, 7:32:12 AM   [NestApplication] Nest application successfully started +4ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:32:26.917Z] File /Users/drew/Documents/Github/portfolio/apps/api/src/app/app.controller.ts changed, reloading triggers
+[debug] [2019-09-12T14:32:28.227Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:32:28.227Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:32:28.230Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:32:28.232Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:32:28.232Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 55057   - 09/12/2019, 7:32:28 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 55057   - 09/12/2019, 7:32:28 AM   [InstanceLoader] AppModule dependencies initialized +29ms
+[info] >  [Nest] 55057   - 09/12/2019, 7:32:28 AM   [RoutesResolver] AppController {/api/}: +17ms
+[info] >  [Nest] 55057   - 09/12/2019, 7:32:28 AM   [RouterExplorer] Mapped {/hello, GET} route +3ms
+[info] >  [Nest] 55057   - 09/12/2019, 7:32:28 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 55057   - 09/12/2019, 7:32:28 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:32:29.673Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js changed, reloading triggers
+[debug] [2019-09-12T14:32:29.674Z] File /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js.map changed, reloading triggers
+[debug] [2019-09-12T14:32:30.972Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:32:30.973Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:32:30.976Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:32:30.977Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:32:30.977Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 55067   - 09/12/2019, 7:32:31 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 55067   - 09/12/2019, 7:32:31 AM   [InstanceLoader] AppModule dependencies initialized +26ms
+[info] >  [Nest] 55067   - 09/12/2019, 7:32:31 AM   [RoutesResolver] AppController {/api/}: +13ms
+[info] >  [Nest] 55067   - 09/12/2019, 7:32:31 AM   [RouterExplorer] Mapped {/hello, GET} route +4ms
+[info] >  [Nest] 55067   - 09/12/2019, 7:32:31 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 55067   - 09/12/2019, 7:32:31 AM   [NestApplication] Nest application successfully started +3ms
+[info] >  Nest Ready
+[debug] [2019-09-12T14:32:50.646Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:32:50.747Z] File /Users/drew/Documents/Github/portfolio/apps/portfolio/src/app/app.component.ts changed, reloading triggers
+[debug] [2019-09-12T14:32:52.046Z] [runtime-status] Functions runtime initialized. {"cwd":"/Users/drew/Documents/Github/portfolio","node_version":"10.16.0"}
+[debug] [2019-09-12T14:32:52.046Z] [runtime-status] Disabled runtime features: {"functions_config_helper":true,"network_filtering":true,"timeout":true,"memory_limiting":true,"admin_stubs":true} {}
+[debug] [2019-09-12T14:32:52.049Z] [runtime-status] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.5.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-admin/lib/index.js"}
+[debug] [2019-09-12T14:32:52.050Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[debug] [2019-09-12T14:32:52.051Z] [runtime-status] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.2.0","resolution":"/Users/drew/Documents/Github/portfolio/node_modules/firebase-functions/lib/index.js"}
+[info] >  [Nest] 55088   - 09/12/2019, 7:32:52 AM   [NestFactory] Starting Nest application...
+[warn] ⚠  TypeError: firebase_functions__WEBPACK_IMPORTED_MODULE_4__.https.onRequest is not a function
+    at Module../apps/api/src/main.ts (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:247:70)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at Object.0 (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:52376:18)
+    at __webpack_require__ (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:20:30)
+    at /Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:84:18
+    at Object.<anonymous> (/Users/drew/Documents/Github/portfolio/dist/apps/api/main.js:87:10)
+    at Module._compile (internal/modules/cjs/loader.js:776:30)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:787:10)
+    at Module.load (internal/modules/cjs/loader.js:653:32)
+    at tryModuleLoad (internal/modules/cjs/loader.js:593:12)
+[warn] ⚠  We were unable to load your functions code. (see above)
+   - It appears your code is written in Typescript, which must be compiled before emulation.
+   - You may be able to run "npm run build" in your functions directory to resolve this.
+[info] >  [Nest] 55088   - 09/12/2019, 7:32:52 AM   [InstanceLoader] AppModule dependencies initialized +27ms
+[info] >  [Nest] 55088   - 09/12/2019, 7:32:52 AM   [RoutesResolver] AppController {/api/}: +13ms
+[info] >  [Nest] 55088   - 09/12/2019, 7:32:52 AM   [RouterExplorer] Mapped {/hello, GET} route +5ms
+[info] >  [Nest] 55088   - 09/12/2019, 7:32:52 AM   [RouterExplorer] Mapped {/, POST} route +2ms
+[info] >  [Nest] 55088   - 09/12/2019, 7:32:52 AM   [NestApplication] Nest application successfully started +2ms
+[info] >  Nest Ready
