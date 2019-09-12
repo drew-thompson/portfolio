@@ -40,6 +40,9 @@
     },
     "common-animations": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "common-styles": {
+      "tags": ["platform:frontend", "type:util"]
     }
   }
 }
