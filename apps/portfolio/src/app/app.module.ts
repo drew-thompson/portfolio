@@ -15,6 +15,7 @@ import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [AppComponent],
@@ -33,7 +34,8 @@ import { AppComponent } from './app.component';
         deps: [HttpClient]
       }
     }),
-    CommonDirectivesModule
+    CommonDirectivesModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },
