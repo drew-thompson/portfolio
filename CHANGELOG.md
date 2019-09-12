@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/drew-thompson/portfolio/compare/v1.3.0...v1.3.1) (2019-09-12)
+
+
+### Bug Fixes
+
+* **firebase:** remove duplicate hosting target from config ([4e72b51](https://github.com/drew-thompson/portfolio/commit/4e72b51))
+
 # [1.3.0](https://github.com/drew-thompson/portfolio/compare/v1.2.0...v1.3.0) (2019-09-12)
 
 
