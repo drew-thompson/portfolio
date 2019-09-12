@@ -1,7 +1,13 @@
 <div style="text-align:center">
   <h1 translate>welcome</h1>
-  <img width="450" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" />
+  <img width="300" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" />
 </div>
 <div translate [translateParams]="{ message: hello$ | async | json }">message</div>
+
+<ul>
+  <ng-container *ngFor="let item of items$ | async">
+    <li>{{ item.name }}</li>
+  </ng-container>
+</ul>
 
 <router-outlet></router-outlet>

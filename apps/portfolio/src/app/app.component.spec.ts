@@ -1,6 +1,8 @@
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { async, TestBed } from '@angular/core/testing';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 import {
   TranslateLoader,
   TranslateModule,
@@ -18,6 +20,8 @@ describe('AppComponent', () => {
       imports: [
         HttpClientModule,
         AppRoutingModule,
+        AngularFireModule.initializeApp(environment.firebase),
+        AngularFirestoreModule,
         TranslateModule.forRoot({
           loader: {
             provide: TranslateLoader,

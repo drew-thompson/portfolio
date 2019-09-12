@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "drewisalegend"
+  },
+  "targets": {
+    "drewisalegend": {
+      "hosting": {
+        "portfolio": [
+          "drewisalegend"
+        ]
+      }
+    }
   }
 }
