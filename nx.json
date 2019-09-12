@@ -43,6 +43,12 @@
     },
     "common-styles": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "data-models": {
+      "tags": ["platform:shared"]
+    },
+    "core-utils": {
+      "tags": ["platform:frontend", "type:util"]
     }
   }
 }

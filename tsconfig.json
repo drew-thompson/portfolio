@@ -24,7 +24,9 @@
       "@portfolio/common/ui/footer": ["libs/common/ui/footer/src/index.ts"],
       "@portfolio/shared": ["libs/shared/src/index.ts"],
       "@portfolio/common/animations": ["libs/common/animations/src/index.ts"],
-      "@portfolio/common/styles": ["libs/common/styles/src/index.ts"]
+      "@portfolio/common/styles": ["libs/common/styles/src/index.ts"],
+      "@portfolio/data/models": ["libs/data/models/src/index.ts"],
+      "@portfolio/core/utils": ["libs/core/utils/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

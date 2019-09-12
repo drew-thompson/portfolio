@@ -1,4 +1,3 @@
-import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireFunctions } from '@angular/fire/functions';
@@ -17,7 +16,6 @@ export class AppComponent {
   items$: Observable<Person[]>;
 
   constructor(
-    private http: HttpClient,
     private translate: TranslateService,
     private db: AngularFirestore,
     private fns: AngularFireFunctions
