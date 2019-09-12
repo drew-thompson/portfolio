@@ -5,7 +5,7 @@
   "scripts": {
     "ng": "ng",
     "start": "concurrently \"npm run serve:api\" \"npm run serve:portfolio\"",
-    "build": "ng build",
+    "build": "ng build --prod",
     "test": "npm run affected:test",
     "lint": "nx lint && ng lint",
     "e2e": "ng e2e",
