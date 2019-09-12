@@ -10,4 +10,9 @@
   </ng-container>
 </ul>
 
+<div timeFromNow [created]="dateClicked$ | async" (timeUpdated)="timestamp$.next($event)" translate
+  [translateParams]="{ time: timestamp$ | async }">lastClicked</div>
+
+<button (click)="updateDateClicked()" type="button" translate>updateTime</button>
+
 <router-outlet></router-outlet>

@@ -1,4 +1,19 @@
 {
     "welcome": "Welcome to portfolio!",
-    "message": "Message: {{ message }}"
+    "message": "Message: {{ message }}",
+    "lastClicked": "Last Time Clicked: {{ time }}",
+    "updateTime": "Please Click Me!",
+    "timestamps": [
+        "< 1 minute ago",
+        "1 minute ago",
+        "minutes ago",
+        "1 hour ago",
+        "hours ago",
+        "1 day ago",
+        "days ago",
+        "1 month ago",
+        "months ago",
+        "1 year ago",
+        "years ago"
+    ]
 }

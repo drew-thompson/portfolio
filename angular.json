@@ -396,6 +396,51 @@
           }
         }
       }
+    },
+    "common-directives": {
+      "projectType": "library",
+      "root": "libs/common/directives",
+      "sourceRoot": "libs/common/directives/src",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/directives/tsconfig.lib.json",
+              "libs/common/directives/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/directives/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/directives/jest.config.js",
+            "tsConfig": "libs/common/directives/tsconfig.spec.json",
+            "setupFile": "libs/common/directives/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "data-enums": {
+      "root": "libs/data/enums",
+      "sourceRoot": "libs/data/enums/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": ["libs/data/enums/tsconfig.lib.json"],
+            "exclude": ["**/node_modules/**", "!libs/data/enums/**"]
+          }
+        }
+      }
     }
   },
   "cli": {

@@ -9,6 +9,7 @@ import {
   TranslateModule,
   TranslateService
 } from '@ngx-translate/core';
+import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
@@ -30,7 +31,8 @@ describe('AppComponent', () => {
             useFactory: HttpLoaderFactory,
             deps: [HttpClient]
           }
-        })
+        }),
+        CommonDirectivesModule
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue: '/' },

@@ -49,6 +49,12 @@
     },
     "core-utils": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "common-directives": {
+      "tags": ["platform:frontend", "type:util"]
+    },
+    "data-enums": {
+      "tags": ["platform:shared"]
     }
   }
 }

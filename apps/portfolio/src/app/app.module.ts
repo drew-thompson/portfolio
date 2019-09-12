@@ -10,6 +10,7 @@ import {
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
@@ -31,7 +32,8 @@ import { AppComponent } from './app.component';
         useFactory: HttpLoaderFactory,
         deps: [HttpClient]
       }
-    })
+    }),
+    CommonDirectivesModule
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },

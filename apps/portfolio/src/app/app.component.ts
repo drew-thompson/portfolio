@@ -3,7 +3,7 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireFunctions } from '@angular/fire/functions';
 import { TranslateService } from '@ngx-translate/core';
 import { Message, Person } from '@portfolio/api-interface';
-import { Observable } from 'rxjs';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 @Component({
@@ -14,6 +14,9 @@ import { map } from 'rxjs/operators';
 export class AppComponent {
   hello$: any;
   items$: Observable<Person[]>;
+
+  dateClicked$: Subject<Date> = new BehaviorSubject<Date>(new Date(0));
+  timestamp$: Subject<string> = new Subject<string>();
 
   constructor(
     private translate: TranslateService,
@@ -42,5 +45,12 @@ export class AppComponent {
 
     const hello = this.fns.httpsCallable('api/hello');
     this.hello$ = hello({ name: 'bob' }) as Observable<Message>;
+  }
+
+  /**
+   * Update the date the demo button was last clicked.
+   */
+  updateDateClicked(): void {
+    this.dateClicked$.next(new Date());
   }
 }
