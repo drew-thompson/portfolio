@@ -1,3 +1,10 @@
+# [1.5.0](https://github.com/drew-thompson/portfolio/compare/v1.4.0...v1.5.0) (2019-09-12)
+
+
+### Features
+
+* create common styles lib and add index to default app styles ([fdd0b43](https://github.com/drew-thompson/portfolio/commit/fdd0b43))
+
 # [1.4.0](https://github.com/drew-thompson/portfolio/compare/v1.3.1...v1.4.0) (2019-09-12)
 
 
