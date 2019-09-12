@@ -1,3 +1,10 @@
+# [1.6.0](https://github.com/drew-thompson/portfolio/compare/v1.5.0...v1.6.0) (2019-09-12)
+
+
+### Features
+
+* create common directives lib with time-from-now directive demo ([286e174](https://github.com/drew-thompson/portfolio/commit/286e174))
+
 # [1.5.0](https://github.com/drew-thompson/portfolio/compare/v1.4.0...v1.5.0) (2019-09-12)
 
 
