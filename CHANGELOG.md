@@ -1,3 +1,10 @@
+# [1.4.0](https://github.com/drew-thompson/portfolio/compare/v1.3.1...v1.4.0) (2019-09-12)
+
+
+### Features
+
+* deploy Nestjs API server to firebase cloud functions ([dce6f39](https://github.com/drew-thompson/portfolio/commit/dce6f39))
+
 ## [1.3.1](https://github.com/drew-thompson/portfolio/compare/v1.3.0...v1.3.1) (2019-09-12)
 
 
