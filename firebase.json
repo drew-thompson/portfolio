@@ -14,10 +14,6 @@
       ],
       "rewrites": [
         {
-          "source": "/drewisalegend/us-central1/api",
-          "function": "api"
-        },
-        {
           "source": "/drewisalegend/us-central1/api/**",
           "function": "api"
         },
