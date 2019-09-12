@@ -37,6 +37,9 @@
     },
     "shared": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "common-animations": {
+      "tags": ["platform:frontend", "type:util"]
     }
   }
 }
