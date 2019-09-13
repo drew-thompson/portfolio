@@ -9,13 +9,13 @@ import {
 } from '@angular/fire/functions';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ServiceWorkerModule } from '@angular/service-worker';
 
 @NgModule({
   declarations: [AppComponent],
@@ -35,7 +35,9 @@ import { ServiceWorkerModule } from '@angular/service-worker';
       }
     }),
     CommonDirectivesModule,
-    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },

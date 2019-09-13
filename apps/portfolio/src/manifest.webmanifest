@@ -1,6 +1,7 @@
 {
-  "name": "portfolio",
+  "name": "Drew Thompson",
   "short_name": "portfolio",
+  "description": "Showcases everything learned and done by Drew Thompson.",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",
