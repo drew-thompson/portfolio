@@ -24,14 +24,14 @@ export class AppComponent implements OnInit {
     private fns: AngularFireFunctions,
     private appRef: ApplicationRef
   ) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+
     this.appRef.isStable.pipe(first(stable => stable)).subscribe(() => {
       console.log('App is stable now');
       const hello = this.fns.httpsCallable('api/hello');
       this.hello$ = hello({ name: 'bob' }) as Observable<Message>;
     });
-
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
   }
 
   ngOnInit() {
