@@ -9,6 +9,7 @@ import {
 } from '@angular/fire/functions';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
@@ -33,7 +34,10 @@ import { AppComponent } from './app.component';
         deps: [HttpClient]
       }
     }),
-    CommonDirectivesModule
+    CommonDirectivesModule,
+    ServiceWorkerModule.register('ngsw-worker.js', {
+      enabled: environment.production
+    })
   ],
   providers: [
     { provide: APP_BASE_HREF, useValue: '/' },

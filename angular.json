@@ -24,7 +24,8 @@
             "tsConfig": "apps/portfolio/tsconfig.app.json",
             "assets": [
               "apps/portfolio/src/favicon.ico",
-              "apps/portfolio/src/assets"
+              "apps/portfolio/src/assets",
+              "apps/portfolio/src/manifest.webmanifest"
             ],
             "styles": [
               "apps/portfolio/src/styles.scss",
@@ -58,7 +59,9 @@
                   "maximumWarning": "2mb",
                   "maximumError": "5mb"
                 }
-              ]
+              ],
+              "serviceWorker": true,
+              "ngswConfigPath": "apps/portfolio/ngsw-config.json"
             }
           }
         },

@@ -1,4 +1,5 @@
 import {
+  ApplicationRef,
   Directive,
   EventEmitter,
   Input,
@@ -10,7 +11,7 @@ import {
 } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { Observable, Subscription, timer } from 'rxjs';
-import { take } from 'rxjs/operators';
+import { first, take } from 'rxjs/operators';
 
 @Directive({
   // tslint:disable-next-line: directive-selector
@@ -46,13 +47,18 @@ export class TimeFromNowDirective implements OnChanges, OnInit, OnDestroy {
 
   private labels: string[];
 
-  constructor(private translate: TranslateService) {}
+  constructor(
+    private translate: TranslateService,
+    private appRef: ApplicationRef
+  ) {}
 
   ngOnChanges(changes: SimpleChanges) {
     const created = changes.created;
     if (created) {
       if (created.isFirstChange()) {
-        this.init();
+        this.appRef.isStable
+          .pipe(first(stable => stable))
+          .subscribe(() => this.init());
       } else {
         this.reset();
       }

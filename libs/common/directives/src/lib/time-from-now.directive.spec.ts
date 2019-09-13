@@ -3,6 +3,7 @@ import {
   HttpClientTestingModule,
   HttpTestingController
 } from '@angular/common/http/testing';
+import { ApplicationRef } from '@angular/core';
 import { TestBed } from '@angular/core/testing';
 import {
   TranslateLoader,
@@ -14,6 +15,7 @@ import { TimeFromNowDirective } from './time-from-now.directive';
 
 describe('TimeFromNowDirective', () => {
   let translate: TranslateService;
+  let appRef: ApplicationRef;
   let http: HttpTestingController;
 
   beforeEach(() => {
@@ -32,10 +34,11 @@ describe('TimeFromNowDirective', () => {
     });
     translate = TestBed.get(TranslateService);
     http = TestBed.get(HttpTestingController);
+    appRef = TestBed.get(ApplicationRef);
   });
 
   it('should create an instance', () => {
-    const directive = new TimeFromNowDirective(translate);
+    const directive = new TimeFromNowDirective(translate, appRef);
     expect(directive).toBeTruthy();
   });
 });
