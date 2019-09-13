@@ -3,8 +3,8 @@ import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireFunctions } from '@angular/fire/functions';
 import { TranslateService } from '@ngx-translate/core';
 import { Message, Person } from '@portfolio/api-interface';
-import { BehaviorSubject, interval, Observable, Subject } from 'rxjs';
-import { first, map, switchMap, tap } from 'rxjs/operators';
+import { BehaviorSubject, Observable, Subject } from 'rxjs';
+import { first, map } from 'rxjs/operators';
 
 @Component({
   selector: 'portfolio-root',
