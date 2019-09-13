@@ -11,8 +11,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
-import { CommonDirectivesModule } from '@portfolio/common/directives';
+import { CommonMaterialModule } from '@portfolio/common/material';
+import { CommonUiHeaderModule } from '@portfolio/common/ui/header';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
+import { HomeFeatureShellModule } from '@portfolio/home/feature-shell';
 import { environment } from '../environments/environment';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -24,6 +26,7 @@ import { AppComponent } from './app.component';
     HttpClientModule,
     BrowserAnimationsModule,
     AppRoutingModule,
+    HomeFeatureShellModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireFunctionsModule,
@@ -34,7 +37,8 @@ import { AppComponent } from './app.component';
         deps: [HttpClient]
       }
     }),
-    CommonDirectivesModule,
+    CommonMaterialModule,
+    CommonUiHeaderModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     })

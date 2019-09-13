@@ -58,6 +58,12 @@
     },
     "home-feature-shell": {
       "tags": ["platform:frontend", "type:feature"]
+    },
+    "common-ui-sidenav": {
+      "tags": ["platform:frontend", "type:ui"]
+    },
+    "common-services": {
+      "tags": ["platform:frontend", "type"]
     }
   }
 }

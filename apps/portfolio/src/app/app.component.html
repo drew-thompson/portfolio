@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1 translate>welcome</h1>
   <img width="300" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" />
 </div>
@@ -13,6 +13,22 @@
 <div timeFromNow [created]="dateClicked$ | async" (timeUpdated)="timestamp$.next($event)" translate
   [translateParams]="{ time: timestamp$ | async }">lastClicked</div>
 
-<button (click)="updateDateClicked()" type="button" translate>updateTime</button>
+<button (click)="updateDateClicked()" type="button" translate>updateTime</button> -->
 
-<router-outlet></router-outlet>
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="push">
+    Sup!
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <ng-container *ngTemplateOutlet="header"></ng-container>
+    <ng-container *ngTemplateOutlet="router"></ng-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<ng-template #header>
+  <portfolio-header></portfolio-header>
+</ng-template>
+
+<ng-template #router>
+  <router-outlet></router-outlet>
+</ng-template>

@@ -29,7 +29,9 @@
       "@portfolio/core/utils": ["libs/core/utils/src/index.ts"],
       "@portfolio/common/directives": ["libs/common/directives/src/index.ts"],
       "@portfolio/data/enums": ["libs/data/enums/src/index.ts"],
-      "@portfolio/home/feature-shell": ["libs/home/feature-shell/src/index.ts"]
+      "@portfolio/home/feature-shell": ["libs/home/feature-shell/src/index.ts"],
+      "@portfolio/common/ui/sidenav": ["libs/common/ui/sidenav/src/index.ts"],
+      "@portfolio/common/services": ["libs/common/services/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

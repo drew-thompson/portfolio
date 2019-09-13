@@ -1,8 +1,16 @@
-import { ApplicationRef, Component, OnInit } from '@angular/core';
+import {
+  AfterViewInit,
+  ApplicationRef,
+  Component,
+  OnInit,
+  ViewChild
+} from '@angular/core';
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireFunctions } from '@angular/fire/functions';
+import { MatSidenav } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
 import { Message, Person } from '@portfolio/api-interface';
+import { SidenavService } from '@portfolio/common/services';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { first, map } from 'rxjs/operators';
 
@@ -11,7 +19,9 @@ import { first, map } from 'rxjs/operators';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent implements OnInit, AfterViewInit {
+  @ViewChild(MatSidenav, { static: true }) sidenav: MatSidenav;
+
   hello$: any;
   items$: Observable<Person[]>;
 
@@ -22,7 +32,8 @@ export class AppComponent implements OnInit {
     private translate: TranslateService,
     private db: AngularFirestore,
     private fns: AngularFireFunctions,
-    private appRef: ApplicationRef
+    private appRef: ApplicationRef,
+    private sidenavService: SidenavService
   ) {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
@@ -50,6 +61,10 @@ export class AppComponent implements OnInit {
     this.items$ = unsortedItems$.pipe(
       map(items => items.sort(peopleAlphabetically))
     );
+  }
+
+  ngAfterViewInit() {
+    this.sidenavService.set(this.sidenav);
   }
 
   /**
