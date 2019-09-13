@@ -2,7 +2,7 @@
   "name": "Drew Thompson",
   "short_name": "portfolio",
   "description": "Showcases everything learned and done by Drew Thompson.",
-  "theme_color": "#8b99ae",
+  "theme_color": "#bdd3f2",
   "background_color": "#f1f1f2",
   "display": "standalone",
   "scope": "/",
