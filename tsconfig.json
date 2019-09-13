@@ -28,7 +28,8 @@
       "@portfolio/data/models": ["libs/data/models/src/index.ts"],
       "@portfolio/core/utils": ["libs/core/utils/src/index.ts"],
       "@portfolio/common/directives": ["libs/common/directives/src/index.ts"],
-      "@portfolio/data/enums": ["libs/data/enums/src/index.ts"]
+      "@portfolio/data/enums": ["libs/data/enums/src/index.ts"],
+      "@portfolio/home/feature-shell": ["libs/home/feature-shell/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

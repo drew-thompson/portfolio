@@ -55,6 +55,9 @@
     },
     "data-enums": {
       "tags": ["platform:shared"]
+    },
+    "home-feature-shell": {
+      "tags": ["platform:frontend", "type:feature"]
     }
   }
 }
