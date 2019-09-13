@@ -1,3 +1,10 @@
+# [1.7.0](https://github.com/drew-thompson/portfolio/compare/v1.6.0...v1.7.0) (2019-09-13)
+
+
+### Features
+
+* **pwa:** integrate service worker basics into portfolio ([8222653](https://github.com/drew-thompson/portfolio/commit/8222653))
+
 # [1.6.0](https://github.com/drew-thompson/portfolio/compare/v1.5.0...v1.6.0) (2019-09-12)
 
 
