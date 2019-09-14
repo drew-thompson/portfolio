@@ -1,4 +1,4 @@
-import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input } from '@angular/core';
 import { SidenavService } from '@portfolio/common/services';
 
 @Component({
@@ -7,8 +7,9 @@ import { SidenavService } from '@portfolio/common/services';
   styleUrls: ['./header.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class HeaderComponent implements OnInit {
-  constructor(public sidenavService: SidenavService) {}
+export class HeaderComponent {
+  /** Whether the header should be in its extended state. */
+  @Input() extended: boolean;
 
-  ngOnInit() {}
+  constructor(public sidenavService: SidenavService) {}
 }

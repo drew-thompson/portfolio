@@ -1,4 +1,5 @@
-<header>
-    <div>header works!</div>
-    <button (click)="sidenavService.sidenav.toggle()">Toggle</button>
+<header [class.extended]="extended">
+    <button (click)="sidenavService.toggle()" mat-icon-button>
+        <mat-icon>menu</mat-icon>
+    </button>
 </header>

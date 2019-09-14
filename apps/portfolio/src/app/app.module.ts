@@ -1,3 +1,4 @@
+import { ScrollingModule } from '@angular/cdk/scrolling';
 import { APP_BASE_HREF } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { NgModule } from '@angular/core';
@@ -11,6 +12,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { CommonUiHeaderModule } from '@portfolio/common/ui/header';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
@@ -39,6 +41,8 @@ import { AppComponent } from './app.component';
     }),
     CommonMaterialModule,
     CommonUiHeaderModule,
+    CommonDirectivesModule,
+    ScrollingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production
     })

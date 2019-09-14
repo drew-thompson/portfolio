@@ -1,4 +1,6 @@
+import { CdkScrollable } from '@angular/cdk/overlay';
 import {
+  AfterContentInit,
   AfterViewInit,
   ApplicationRef,
   Component,
@@ -12,21 +14,27 @@ import { TranslateService } from '@ngx-translate/core';
 import { Message, Person } from '@portfolio/api-interface';
 import { SidenavService } from '@portfolio/common/services';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
-import { first, map } from 'rxjs/operators';
+import { first, map, startWith, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'portfolio-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit, AfterViewInit {
+export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   @ViewChild(MatSidenav, { static: true }) sidenav: MatSidenav;
+  @ViewChild(CdkScrollable, { static: true }) sidenavContent: CdkScrollable;
+
+  atTop = true;
+  wasAtTop: boolean;
 
   hello$: any;
   items$: Observable<Person[]>;
 
   dateClicked$: Subject<Date> = new BehaviorSubject<Date>(new Date(0));
   timestamp$: Subject<string> = new Subject<string>();
+
+  isAtTop$: Observable<boolean>;
 
   constructor(
     private translate: TranslateService,
@@ -67,10 +75,22 @@ export class AppComponent implements OnInit, AfterViewInit {
     this.sidenavService.set(this.sidenav);
   }
 
+  ngAfterContentInit() {
+    this.isAtTop$ = this.sidenavContent.elementScrolled().pipe(
+      map(() => this.isAtTop()),
+      tap(() => window.dispatchEvent(new Event('resize'))),
+      startWith(this.isAtTop())
+    );
+  }
+
   /**
    * Update the date the demo button was last clicked.
    */
   updateDateClicked(): void {
     this.dateClicked$.next(new Date());
+  }
+
+  private isAtTop(): boolean {
+    return this.sidenavContent.measureScrollOffset('top') === 0;
   }
 }
