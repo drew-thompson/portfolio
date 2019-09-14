@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { CommonMaterialModule } from '@portfolio/common/material';
 import { SidenavService } from '@portfolio/common/services';
 import { HeaderComponent } from './header.component';
 
@@ -9,6 +10,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
+      imports: [CommonMaterialModule],
       declarations: [HeaderComponent]
     }).compileComponents();
   }));
