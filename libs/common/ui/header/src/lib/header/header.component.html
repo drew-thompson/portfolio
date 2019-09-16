@@ -1,0 +1,36 @@
+<header [class.extended]="extended" fxLayout="row" fxLayoutAlign="start center">
+    <div fxShow [fxHide.gt-xs]="true" class="w-100">
+        <ng-container *ngTemplateOutlet="mobile"></ng-container>
+    </div>
+    <div fxHide [fxShow.gt-xs]="true" class="w-100">
+        <ng-container *ngTemplateOutlet="desktop"></ng-container>
+    </div>
+</header>
+
+<ng-template #mobile>
+    <nav fxLayout="row" class="w-100">
+        <ng-container *ngTemplateOutlet="me"></ng-container>
+        <div style="margin-left: auto">
+            <button (click)="sidenavService.toggle()" mat-icon-button>
+                <mat-icon>menu</mat-icon>
+            </button>
+        </div>
+    </nav>
+</ng-template>
+
+<ng-template #desktop>
+    <nav fxLayout="row" class="w-100">
+        <ng-container *ngTemplateOutlet="me"></ng-container>
+        <ng-container *ngFor="let link of links">
+            <a [routerLink]="link.url" class="link mat-subheading-2">{{ link.title }}</a>
+        </ng-container>
+
+    </nav>
+</ng-template>
+
+
+<ng-template #me>
+    <a routerLink="/" class="me">
+        <img src="assets/icons/icon-72x72.png" alt="Drew Thompson">
+    </a>
+</ng-template>

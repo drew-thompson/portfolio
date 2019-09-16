@@ -1,6 +1,19 @@
 {
-    "welcome": "Welcome to portfolio!",
-    "message": "Message: {{ message }}",
+    "name": {
+        "first": "Drew",
+        "last": "Thompson",
+        "full": "Drew Thompson"
+    },
+    "links": [
+        {
+            "title": "Projects",
+            "url": "/projects"
+        },
+        {
+            "title": "Blog",
+            "url": "/writing"
+        }
+    ],
     "lastClicked": "Last Time Clicked: {{ time }}",
     "updateTime": "Please Click Me!",
     "timestamps": [
@@ -15,5 +28,10 @@
         "months ago",
         "1 year ago",
         "years ago"
-    ]
+    ],
+    "libs": {
+        "common": {
+            "sidenav": {}
+        }
+    }
 }

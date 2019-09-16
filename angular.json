@@ -444,6 +444,99 @@
           }
         }
       }
+    },
+    "home-feature-shell": {
+      "projectType": "library",
+      "root": "libs/home/feature-shell",
+      "sourceRoot": "libs/home/feature-shell/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/home/feature-shell/tsconfig.lib.json",
+              "libs/home/feature-shell/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/home/feature-shell/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/home/feature-shell/jest.config.js",
+            "tsConfig": "libs/home/feature-shell/tsconfig.spec.json",
+            "setupFile": "libs/home/feature-shell/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "common-ui-sidenav": {
+      "projectType": "library",
+      "root": "libs/common/ui/sidenav",
+      "sourceRoot": "libs/common/ui/sidenav/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/ui/sidenav/tsconfig.lib.json",
+              "libs/common/ui/sidenav/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/ui/sidenav/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/ui/sidenav/jest.config.js",
+            "tsConfig": "libs/common/ui/sidenav/tsconfig.spec.json",
+            "setupFile": "libs/common/ui/sidenav/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
+    },
+    "common-services": {
+      "projectType": "library",
+      "root": "libs/common/services",
+      "sourceRoot": "libs/common/services/src",
+      "prefix": "portfolio",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/common/services/tsconfig.lib.json",
+              "libs/common/services/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/common/services/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/common/services/jest.config.js",
+            "tsConfig": "libs/common/services/tsconfig.spec.json",
+            "setupFile": "libs/common/services/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {
+        "@nrwl/angular:component": {
+          "styleext": "scss"
+        }
+      }
     }
   },
   "cli": {

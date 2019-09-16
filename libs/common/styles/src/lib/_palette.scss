@@ -1,0 +1,49 @@
+$neutral: (
+	100: #f1f1f2,
+	300: #eee,
+	400: #dbdfe5,
+	500: #bebebe,
+	600: #555,
+	700: #333333,
+	900: #161616,
+	A100: white,
+	A700: black
+);
+
+$red: (
+	300: #e25950,
+	500: #ff0000
+);
+
+$blue: (
+	100: #d4e5fd,
+	500: #bdd3f2,
+	700: #9db8dd
+);
+
+$green: (
+	100: #f0f7f6,
+	500: #e0eeed,
+	700: #8daa9a
+);
+
+$purple: (
+	100: #f0f0f7,
+	500: #d9dcea,
+	700: #a7b2ce
+);
+
+$peach: (
+	100: #fcf2ed,
+	500: #f8e7e0,
+	700: #f2d2c4
+);
+
+@function color($palette, $hue: 500) {
+	@if map-has-key($palette, $hue) {
+		@return map-get($palette, $hue);
+	}
+
+	@warn "Color of hue `#{$hue}` not in `#{$palette}`.";
+	@return null;
+}

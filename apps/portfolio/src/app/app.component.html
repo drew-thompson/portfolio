@@ -1,4 +1,4 @@
-<div style="text-align:center">
+<!-- <div style="text-align:center">
   <h1 translate>welcome</h1>
   <img width="300" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" />
 </div>
@@ -13,6 +13,30 @@
 <div timeFromNow [created]="dateClicked$ | async" (timeUpdated)="timestamp$.next($event)" translate
   [translateParams]="{ time: timestamp$ | async }">lastClicked</div>
 
-<button (click)="updateDateClicked()" type="button" translate>updateTime</button>
+<button (click)="updateDateClicked()" type="button" translate>updateTime</button> -->
 
-<router-outlet></router-outlet>
+<!-- <div style="z-index: 100; position: fixed; bottom: 2rem; left: 2rem; background-color: white; border-radius: 5px">
+  hi {{ atTop }}
+  <div (click)="atTop = !atTop">stop</div>
+</div> -->
+<!-- <ng-container *ngTemplateOutlet="header"></ng-container> -->
+
+<!-- <p style="height: 200vh"></p> -->
+
+<mat-sidenav-container>
+  <mat-sidenav #sidenav mode="over" position="end">
+    <portfolio-sidenav [links]="links$ | async"></portfolio-sidenav>
+  </mat-sidenav>
+  <mat-sidenav-content cdkScrollable>
+    <ng-container *ngTemplateOutlet="header"></ng-container>
+    <ng-container *ngTemplateOutlet="router"></ng-container>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+
+<ng-template #header>
+  <portfolio-header [extended]="!(isAtTop$ | async)" [links]="links$ | async"></portfolio-header>
+</ng-template>
+
+<ng-template #router>
+  <router-outlet></router-outlet>
+</ng-template>

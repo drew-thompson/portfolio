@@ -1,0 +1,14 @@
+@import 'palette';
+
+a {
+	color: color($neutral, 600);
+
+	&:hover {
+		color: color($neutral, 900);
+	}
+
+	&:active,
+	&:visited {
+		color: color($neutral, 700);
+	}
+}
