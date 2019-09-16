@@ -15,6 +15,7 @@ import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { CommonUiHeaderModule } from '@portfolio/common/ui/header';
+import { CommonUiSidenavModule } from '@portfolio/common/ui/sidenav';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
 import { HomeFeatureShellModule } from '@portfolio/home/feature-shell';
 import { environment } from '../environments/environment';
@@ -41,6 +42,7 @@ import { AppComponent } from './app.component';
     }),
     CommonMaterialModule,
     CommonUiHeaderModule,
+    CommonUiSidenavModule,
     CommonDirectivesModule,
     ScrollingModule,
     ServiceWorkerModule.register('ngsw-worker.js', {

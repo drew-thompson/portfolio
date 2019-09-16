@@ -1,1 +1,11 @@
-<p>sidenav works!</p>
+<header>
+    <h1 class="mat-headline" translate>name.full</h1>
+</header>
+<nav fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.3rem">
+
+    <ng-container *ngFor="let link of links">
+        <div fxFlexFill class="link">
+            <a [routerLink]="link.url">{{ link.title }}</a>
+        </div>
+    </ng-container>
+</nav>

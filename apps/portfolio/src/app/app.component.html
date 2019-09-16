@@ -25,7 +25,7 @@
 
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="over" position="end">
-    Sup!
+    <portfolio-sidenav [links]="links$ | async"></portfolio-sidenav>
   </mat-sidenav>
   <mat-sidenav-content cdkScrollable>
     <ng-container *ngTemplateOutlet="header"></ng-container>
@@ -34,7 +34,7 @@
 </mat-sidenav-container>
 
 <ng-template #header>
-  <portfolio-header [extended]="!(isAtTop$ | async)"></portfolio-header>
+  <portfolio-header [extended]="!(isAtTop$ | async)" [links]="links$ | async"></portfolio-header>
 </ng-template>
 
 <ng-template #router>

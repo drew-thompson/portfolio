@@ -1,9 +1,18 @@
 @import 'variables', 'mixins';
 
+a {
+	@include my-auto();
+}
+
+a.link {
+	margin: auto 0.75rem;
+	text-decoration: none;
+}
+
 a.me {
+	margin-right: auto;
 	@include square(2rem);
 	@include rounded();
-	@include my-auto();
 
 	overflow: hidden;
 	img {
@@ -29,4 +38,8 @@ header {
 		background-color: rgba(white, 0.85);
 		box-shadow: 0 2px 8px 0 rgba(22, 22, 22, 0.15);
 	}
+}
+
+.w-100 {
+	width: 100%;
 }

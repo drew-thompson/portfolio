@@ -1,4 +1,4 @@
-@import 'palette';
+@import '../palette';
 
 .mat-drawer-backdrop.mat-drawer-shown {
 	background-color: rgba(color($blue), 0.6);

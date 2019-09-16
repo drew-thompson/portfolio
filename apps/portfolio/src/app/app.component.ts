@@ -13,6 +13,7 @@ import { MatSidenav } from '@angular/material';
 import { TranslateService } from '@ngx-translate/core';
 import { Message, Person } from '@portfolio/api-interface';
 import { SidenavService } from '@portfolio/common/services';
+import { Link } from '@portfolio/data/models';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { first, map, startWith, tap } from 'rxjs/operators';
 
@@ -25,9 +26,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   @ViewChild(MatSidenav, { static: true }) sidenav: MatSidenav;
   @ViewChild(CdkScrollable, { static: true }) sidenavContent: CdkScrollable;
 
-  atTop = true;
-  wasAtTop: boolean;
-
   hello$: any;
   items$: Observable<Person[]>;
 
@@ -35,6 +33,7 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   timestamp$: Subject<string> = new Subject<string>();
 
   isAtTop$: Observable<boolean>;
+  links$: Observable<Link[]>;
 
   constructor(
     private translate: TranslateService,
@@ -45,6 +44,8 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   ) {
     this.translate.setDefaultLang('en');
     this.translate.use('en');
+
+    this.links$ = this.translate.get('links');
 
     this.appRef.isStable.pipe(first(stable => stable)).subscribe(() => {
       console.log('App is stable now');
