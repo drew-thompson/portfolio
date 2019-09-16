@@ -1,3 +1,10 @@
+# [1.8.0](https://github.com/drew-thompson/portfolio/compare/v1.7.0...v1.8.0) (2019-09-16)
+
+
+### Features
+
+* **header:** create basic header with links ([c06b0e2](https://github.com/drew-thompson/portfolio/commit/c06b0e2))
+
 # [1.7.0](https://github.com/drew-thompson/portfolio/compare/v1.6.0...v1.7.0) (2019-09-13)
 
 
