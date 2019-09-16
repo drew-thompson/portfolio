@@ -4,6 +4,7 @@ import { async, TestBed } from '@angular/core/testing';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
+import { AngularFirePerformanceModule } from '@angular/fire/performance';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
   TranslateLoader,
@@ -32,6 +33,7 @@ describe('AppComponent', () => {
         AngularFireModule.initializeApp(environment.firebase),
         AngularFirestoreModule,
         AngularFireFunctionsModule,
+        AngularFirePerformanceModule,
         TranslateModule.forRoot({
           loader: {
             provide: TranslateLoader,

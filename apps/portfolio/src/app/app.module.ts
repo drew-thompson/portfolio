@@ -8,6 +8,7 @@ import {
   AngularFireFunctionsModule,
   FUNCTIONS_ORIGIN
 } from '@angular/fire/functions';
+import { AngularFirePerformanceModule } from '@angular/fire/performance';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
@@ -33,6 +34,7 @@ import { AppComponent } from './app.component';
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule,
     AngularFireFunctionsModule,
+    AngularFirePerformanceModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
