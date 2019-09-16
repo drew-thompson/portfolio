@@ -1,5 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterTestingModule } from '@angular/router/testing';
 import { SidenavComponent } from './sidenav.component';
 
 describe('SidenavComponent', () => {
@@ -8,9 +9,9 @@ describe('SidenavComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ SidenavComponent ]
-    })
-    .compileComponents();
+      imports: [RouterTestingModule, FlexLayoutModule],
+      declarations: [SidenavComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

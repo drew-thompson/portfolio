@@ -10,8 +10,10 @@ import {
   TranslateModule,
   TranslateService
 } from '@ngx-translate/core';
+import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { CommonUiHeaderModule } from '@portfolio/common/ui/header';
+import { CommonUiSidenavModule } from '@portfolio/common/ui/sidenav';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
 import { HomeFeatureShellModule } from '@portfolio/home/feature-shell';
 import { environment } from '../environments/environment';
@@ -38,7 +40,9 @@ describe('AppComponent', () => {
           }
         }),
         CommonMaterialModule,
-        CommonUiHeaderModule
+        CommonUiHeaderModule,
+        CommonUiSidenavModule,
+        CommonDirectivesModule
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue: '/' },

@@ -1,4 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FlexLayoutModule } from '@angular/flex-layout';
+import { RouterTestingModule } from '@angular/router/testing';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { SidenavService } from '@portfolio/common/services';
 import { HeaderComponent } from './header.component';
@@ -10,7 +12,7 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CommonMaterialModule],
+      imports: [RouterTestingModule, FlexLayoutModule, CommonMaterialModule],
       declarations: [HeaderComponent]
     }).compileComponents();
   }));
