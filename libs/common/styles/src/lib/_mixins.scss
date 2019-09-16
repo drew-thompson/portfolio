@@ -1,0 +1,27 @@
+@mixin rounded($radius: 5px) {
+	border-radius: $radius;
+}
+
+@mixin square($side) {
+	width: $side;
+	min-width: $side;
+	max-width: $side;
+	height: $side;
+	min-height: $side;
+	max-height: $side;
+}
+
+@mixin mx-auto() {
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@mixin my-auto() {
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+@mixin px($padding) {
+	padding-left: $padding;
+	padding-right: $padding;
+}
