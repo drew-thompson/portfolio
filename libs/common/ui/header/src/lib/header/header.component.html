@@ -1,8 +1,8 @@
 <header [class.extended]="extended" fxLayout="row" fxLayoutAlign="start center">
-    <div fxShow [fxHide.gt-xs]="true" class="w-100">
+    <div fxShow fxHide.gt-xs="true" class="w-100">
         <ng-container *ngTemplateOutlet="mobile"></ng-container>
     </div>
-    <div fxHide [fxShow.gt-xs]="true" class="w-100">
+    <div fxHide fxShow.gt-xs="true" class="w-100">
         <ng-container *ngTemplateOutlet="desktop"></ng-container>
     </div>
 </header>
