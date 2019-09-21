@@ -4,6 +4,10 @@
 	color: color($palette, $hue);
 }
 
+@mixin background-color($palette, $hue: 500) {
+	background-color: color($palette, $hue);
+}
+
 @mixin rounded($radius: 5px) {
 	border-radius: $radius;
 }

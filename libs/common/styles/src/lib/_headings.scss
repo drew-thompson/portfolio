@@ -1,4 +1,4 @@
-@import 'mixins';
+@import 'p-mixins';
 
 h1 {
 	@include color($neutral, 700);

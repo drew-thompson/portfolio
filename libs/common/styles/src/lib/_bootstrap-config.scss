@@ -1,0 +1,25 @@
+@import './palette';
+
+$grid-breakpoints: (
+	xs: 0,
+	sm: 600px,
+	md: 960px,
+	lg: 1280px,
+	xl: 1920px
+);
+
+$container-max-widths: (
+	sm: 720px,
+	md: 960px,
+	lg: 1140px,
+	xl: 1440px
+);
+
+$theme-colors: (
+	primary: color($blue, 500),
+	secondary: color($neutral, A100),
+	light: color($neutral, 100),
+	dark: color($neutral, A700)
+);
+
+$border-radius: 5px;
