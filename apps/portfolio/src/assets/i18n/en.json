@@ -39,13 +39,15 @@
                 "title": "Projects",
                 "image": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?cs=srgb&dl=blur-code-coding-270408.jpg&fm=jpg",
                 "subtitle": "All of the fun, challenging, and exciting projects I've been able to be a part of.",
-                "description": "It's always a pleasure to put my heart into a project and see how far I can go with it."
+                "description": "It's always a pleasure to put my heart into a project and see how far I can go with it.",
+                "url": "/projects"
             },
             {
                 "title": "Blog",
                 "image": "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
                 "subtitle": "What I have to say about the tech I use.",
-                "description": "Test"
+                "description": "Test",
+                "url": "/writing"
             }
         ]
     },

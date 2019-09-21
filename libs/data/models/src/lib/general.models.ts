@@ -27,7 +27,7 @@ export interface Tile {
 /**
  * An available section of the site to be viewed.
  */
-export interface Topic extends Card {
+export interface Topic extends Card, Link {
   /** Title subject of the topic. */
   title: string;
   /** Secondary description of the topic. */

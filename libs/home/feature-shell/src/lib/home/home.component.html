@@ -29,7 +29,9 @@
             </div>
             <div class="col-12 col-sm-4">
                 <portfolio-topic [topic]="topic">
-                    <button mat-button class="ml-auto">Hi</button>
+                    <button mat-button class="ml-auto">
+                        <a [routerLink]="topic.url">{{ topic.title }}</a>
+                    </button>
                 </portfolio-topic>
             </div>
         </article>
@@ -60,5 +62,5 @@
 </ng-template>
 
 <ng-template #me>
-    <img src="assets/images/drew-lg.jpg" [alt]="'name.full' | translate" class="mx-auto mx-md-0 me rounded">
+    <img src="assets/images/drew-md.jpg" [alt]="'name.full' | translate" class="mx-auto mx-md-0 me rounded">
 </ng-template>

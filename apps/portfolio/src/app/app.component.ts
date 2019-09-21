@@ -16,6 +16,7 @@ import { SidenavService } from '@portfolio/common/services';
 import { Link } from '@portfolio/data/models';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { first, map, startWith, tap } from 'rxjs/operators';
+import { SwUpdate } from '@angular/service-worker';
 
 @Component({
   selector: 'portfolio-root',
@@ -40,7 +41,8 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
     private db: AngularFirestore,
     private fns: AngularFireFunctions,
     private appRef: ApplicationRef,
-    private sidenavService: SidenavService
+    private sidenavService: SidenavService,
+    private updates: SwUpdate
   ) {
     this.links$ = this.translate.get('links');
 
@@ -48,6 +50,13 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
       console.log('App is stable now');
       const hello = this.fns.httpsCallable('api/hello');
       this.hello$ = hello({ name: 'bob' }) as Observable<Message>;
+    });
+
+    this.updates.available.subscribe(a => {
+      console.log(a);
+      if (confirm('Reload page to update to latest version of site?')) {
+        this.updates.activateUpdate().then(() => document.location.reload());
+      }
     });
   }
 
