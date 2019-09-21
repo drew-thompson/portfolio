@@ -22,7 +22,7 @@
     <nav fxLayout="row" class="w-100">
         <ng-container *ngTemplateOutlet="me"></ng-container>
         <ng-container *ngFor="let link of links">
-            <a [routerLink]="link.url" class="link mat-subheading-2">{{ link.title }}</a>
+            <a [routerLink]="link.url" class="link">{{ link.title }}</a>
         </ng-container>
 
     </nav>
@@ -31,6 +31,10 @@
 
 <ng-template #me>
     <a routerLink="/" class="me">
-        <img src="assets/icons/icon-72x72.png" alt="Drew Thompson">
+        <img src="assets/icons/icon-128x128.png" alt="Drew Thompson">
     </a>
+</ng-template>
+
+<ng-template #name>
+    <a routerLink="/" class="link name mat-display-1" translate>name.full</a>
 </ng-template>

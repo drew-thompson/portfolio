@@ -1,5 +1,41 @@
-p {
-	height: 200vh;
-	margin-top: 0;
-	background-color: lightgreen;
+@import 'functions', 'variables', 'mixins';
+@import 'p-variables', 'p-mixins';
+
+portfolio-topic {
+	display: block;
+	margin-bottom: 1rem;
+	min-width: 150px;
+}
+
+h1 {
+	margin-bottom: 1rem;
+}
+
+h2 {
+	@include color($neutral, 700);
+}
+
+section {
+	padding: 0 1rem;
+}
+
+.avatar {
+	background-image: url('/assets/icons/icon-72x72.png');
+	background-size: cover;
+}
+
+.me {
+	max-width: 100%;
+
+	@include media-breakpoint-up(sm) {
+		max-height: 300px;
+	}
+}
+
+.splash {
+	margin-top: -$header-height-collapsed;
+	padding: ($header-height-collapsed + 4rem) 1rem 3rem 1rem;
+	z-index: -1;
+	width: 100vw;
+	@include background-color($purple, 500);
 }

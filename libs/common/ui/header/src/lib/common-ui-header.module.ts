@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { MatButtonModule, MatIconModule } from '@angular/material';
 import { RouterModule } from '@angular/router';
+import { TranslateModule } from '@ngx-translate/core';
 import { HeaderComponent } from './header/header.component';
 
 @NgModule({
@@ -11,7 +12,8 @@ import { HeaderComponent } from './header/header.component';
     FlexLayoutModule,
     RouterModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    TranslateModule
   ],
   declarations: [HeaderComponent],
   exports: [HeaderComponent]

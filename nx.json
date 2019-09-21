@@ -64,6 +64,9 @@
     },
     "common-services": {
       "tags": ["platform:frontend", "type"]
+    },
+    "home-ui": {
+      "tags": ["platform:frontend", "type:ui"]
     }
   }
 }
