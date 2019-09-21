@@ -42,9 +42,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
     private appRef: ApplicationRef,
     private sidenavService: SidenavService
   ) {
-    this.translate.setDefaultLang('en');
-    this.translate.use('en');
-
     this.links$ = this.translate.get('links');
 
     this.appRef.isStable.pipe(first(stable => stable)).subscribe(() => {

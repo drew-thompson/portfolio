@@ -9,10 +9,15 @@ import {
   FUNCTIONS_ORIGIN
 } from '@angular/fire/functions';
 import { AngularFirePerformanceModule } from '@angular/fire/performance';
+import { FlexLayoutModule } from '@angular/flex-layout';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
+import {
+  TranslateLoader,
+  TranslateModule,
+  TranslateService
+} from '@ngx-translate/core';
 import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { CommonUiHeaderModule } from '@portfolio/common/ui/header';
@@ -35,6 +40,7 @@ import { AppComponent } from './app.component';
     AngularFirestoreModule,
     AngularFireFunctionsModule,
     AngularFirePerformanceModule,
+    FlexLayoutModule,
     TranslateModule.forRoot({
       loader: {
         provide: TranslateLoader,
@@ -58,4 +64,9 @@ import { AppComponent } from './app.component';
   ],
   bootstrap: [AppComponent]
 })
-export class AppModule {}
+export class AppModule {
+  constructor(private translate: TranslateService) {
+    this.translate.setDefaultLang('en');
+    this.translate.use('en');
+  }
+}
