@@ -30,7 +30,7 @@
             <div class="col-12 col-sm-4">
                 <portfolio-topic [topic]="topic">
                     <button mat-button class="ml-auto">
-                        <a [routerLink]="topic.url">{{ topic.title }}</a>
+                        <a [routerLink]="topic.url" translate>home.{{ topic.title | lowercase }}</a>
                     </button>
                 </portfolio-topic>
             </div>

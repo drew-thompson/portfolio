@@ -1,0 +1,7 @@
+@import './palette';
+
+:focus,
+button:focus {
+	outline-width: 2px;
+	outline-color: color($blue, 700);
+}
