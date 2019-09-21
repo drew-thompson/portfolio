@@ -1,4 +1,5 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { RouterTestingModule } from '@angular/router/testing';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { Topic } from '@portfolio/data/models';
 import { TopicComponent } from './topic.component';
@@ -10,7 +11,7 @@ describe('TopicComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [CommonMaterialModule],
+      imports: [CommonMaterialModule, RouterTestingModule],
       declarations: [TopicComponent]
     }).compileComponents();
   }));
@@ -20,7 +21,8 @@ describe('TopicComponent', () => {
     validTopic = {
       title: 'Hello!',
       subtitle: 'A greeting',
-      description: 'This is one'
+      description: 'This is one',
+      url: '/test'
     };
     component = fixture.componentInstance;
     component.topic = validTopic;

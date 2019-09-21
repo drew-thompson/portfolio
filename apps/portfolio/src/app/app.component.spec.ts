@@ -6,6 +6,7 @@ import { AngularFirestoreModule } from '@angular/fire/firestore';
 import { AngularFireFunctionsModule } from '@angular/fire/functions';
 import { AngularFirePerformanceModule } from '@angular/fire/performance';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ServiceWorkerModule, SwUpdate } from '@angular/service-worker';
 import {
   TranslateLoader,
   TranslateModule,
@@ -44,12 +45,14 @@ describe('AppComponent', () => {
         CommonMaterialModule,
         CommonUiHeaderModule,
         CommonUiSidenavModule,
-        CommonDirectivesModule
+        CommonDirectivesModule,
+        ServiceWorkerModule.register('ngsw-worker.js')
       ],
       providers: [
         { provide: APP_BASE_HREF, useValue: '/' },
         { provide: ENVIRONMENT, useValue: environment },
-        TranslateService
+        TranslateService,
+        SwUpdate
       ]
     }).compileComponents();
   }));
