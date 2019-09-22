@@ -45,3 +45,11 @@ export interface Card {
   image?: string;
   avatar?: string;
 }
+
+/**
+ * An individual project.
+ */
+export interface Project extends Link {
+  start: string;
+  end?: string;
+}

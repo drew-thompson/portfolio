@@ -32,7 +32,10 @@
       "@portfolio/home/feature-shell": ["libs/home/feature-shell/src/index.ts"],
       "@portfolio/common/ui/sidenav": ["libs/common/ui/sidenav/src/index.ts"],
       "@portfolio/common/services": ["libs/common/services/src/index.ts"],
-      "@portfolio/home/ui": ["libs/home/ui/src/index.ts"]
+      "@portfolio/home/ui": ["libs/home/ui/src/index.ts"],
+      "@portfolio/projects/data-access": [
+        "libs/projects/data-access/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

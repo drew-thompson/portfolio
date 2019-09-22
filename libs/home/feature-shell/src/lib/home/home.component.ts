@@ -1,6 +1,7 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
-import { Topic } from '@portfolio/data/models';
+import { Project, Topic } from '@portfolio/data/models';
+import { ProjectsService } from '@portfolio/projects/data-access';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -11,12 +12,18 @@ import { Observable } from 'rxjs';
 })
 export class HomeComponent implements OnInit {
   topics$: Observable<Topic[]>;
+  projects$: Observable<Project[]>;
 
-  constructor(private translate: TranslateService) {
+  constructor(
+    private projectsService: ProjectsService,
+    private translate: TranslateService
+  ) {
     this.topics$ = this.translate.get('home.topics');
   }
 
-  ngOnInit() {}
+  ngOnInit() {
+    this.projects$ = this.projects$ = this.projectsService.getProjects();
+  }
 
   getImage(path: string): string {
     return `assets/images/${path}`;
