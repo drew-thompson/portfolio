@@ -7,13 +7,14 @@ a {
 a.link {
 	margin: auto 0.75rem;
 	text-decoration: none;
-	font-size: 1;
+	font-size: 110%;
 }
 
 a.me {
+	position: absolute;
+	left: 0;
 	@include square(2rem);
 	@include rounded();
-	margin-right: auto;
 
 	overflow: hidden;
 	img {
@@ -45,6 +46,10 @@ header {
 		background-color: rgba(white, 0.85);
 		box-shadow: 0 2px 8px 0 rgba(22, 22, 22, 0.15);
 	}
+}
+
+.desktop.row {
+	position: relative;
 }
 
 .w-100 {

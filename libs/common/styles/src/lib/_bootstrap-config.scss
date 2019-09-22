@@ -22,4 +22,8 @@ $theme-colors: (
 	dark: color($neutral, A700)
 );
 
+$spacers: (
+	6: $spacer * 4.5
+);
+
 $border-radius: 5px;

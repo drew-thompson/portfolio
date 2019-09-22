@@ -13,8 +13,19 @@
         </mat-card>
     </div>
 
-    <div fxHide fxShow.gt-xs="true">
-        <ng-container *ngTemplateOutlet="intro"></ng-container>
+
+    <div fxHide fxShow.gt-xs="true" class="container">
+        <div class="row no-gutters">
+            <div class="col-12 col-sm-7 col-md-8">
+                <header>
+                    <h1 class="mat-display-3" translate>name.full</h1>
+                    <h2 class="mat-title" translate>me.shortBio</h2>
+                </header>
+            </div>
+            <div fxLayout="row" fxLayoutAlign="center start" class="col offset-sm-1 col-sm-4 offset-md-0">
+                <img src="assets/images/drew-md.jpg" [alt]="'name.full' | translate" class="mx-auto mx-md-0 me rounded">
+            </div>
+        </div>
     </div>
 </div>
 
@@ -22,7 +33,7 @@
 
     <ng-container *ngFor="let topic of topics$ | async; let i=index">
         <article fxLayout="column" [fxLayout.gt-sm]=" isOdd(i) ? 'row-reverse' : 'row'" fxLayoutAlign="center center"
-            class="row my-3 my-sm-4 my-md-5">
+            class="row my-3 my-sm-5 my-md-6">
             <div class="col-12 col-sm-8">
                 <h3>{{ topic.title }}</h3>
                 <p>{{ topic.description }}</p>
@@ -37,30 +48,4 @@
         </article>
     </ng-container>
 
-
 </section>
-
-<ng-template #intro>
-    <div class="container">
-        <div class="row no-gutters">
-            <div class="col-12 col-sm-7">
-                <ng-container *ngTemplateOutlet="header"></ng-container>
-            </div>
-            <div class="col offset-sm-1 col-sm-4">
-                <ng-container *ngTemplateOutlet="me"></ng-container>
-            </div>
-        </div>
-    </div>
-</ng-template>
-
-
-<ng-template #header>
-    <header>
-        <h1 class="mat-display-3" translate>name.full</h1>
-        <h2 class="mat-title" translate>me.shortBio</h2>
-    </header>
-</ng-template>
-
-<ng-template #me>
-    <img src="assets/images/drew-md.jpg" [alt]="'name.full' | translate" class="mx-auto mx-md-0 me rounded">
-</ng-template>

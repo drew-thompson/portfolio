@@ -34,8 +34,16 @@ section {
 
 .splash {
 	margin-top: -$header-height-collapsed;
-	padding: ($header-height-collapsed + 4rem) 1rem 3rem 1rem;
+	padding: ($header-height-collapsed + 1rem) 1rem 3rem 1rem;
 	z-index: -1;
 	width: 100vw;
 	@include background-color($purple, 500);
+	@include media-breakpoint-up(sm) {
+		background-color: transparent;
+		.container {
+			padding: 2rem;
+			@include rounded();
+			@include background-color($purple, 500);
+		}
+	}
 }

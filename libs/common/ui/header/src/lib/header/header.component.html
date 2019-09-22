@@ -1,14 +1,14 @@
 <header [class.extended]="extended" fxLayout="row" fxLayoutAlign="start center">
-    <div fxShow fxHide.gt-xs="true" class="w-100">
+    <div fxShow fxHide.gt-xs="true" class="container w-100">
         <ng-container *ngTemplateOutlet="mobile"></ng-container>
     </div>
-    <div fxHide fxShow.gt-xs="true" class="w-100">
+    <div fxHide fxShow.gt-xs="true" class="container w-100">
         <ng-container *ngTemplateOutlet="desktop"></ng-container>
     </div>
 </header>
 
 <ng-template #mobile>
-    <nav fxLayout="row" class="w-100">
+    <nav fxLayout="row" class="row">
         <ng-container *ngTemplateOutlet="me"></ng-container>
         <div style="margin-left: auto">
             <button (click)="sidenavService.toggle()" mat-icon-button>
@@ -19,7 +19,7 @@
 </ng-template>
 
 <ng-template #desktop>
-    <nav fxLayout="row" class="w-100">
+    <nav fxLayout="row" fxLayoutAlign="center center" class="row desktop">
         <ng-container *ngTemplateOutlet="me"></ng-container>
         <ng-container *ngFor="let link of links">
             <a [routerLink]="link.url" class="link">{{ link.title }}</a>
