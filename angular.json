@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/apps/portfolio",
+            "outputPath": "dist/apps/portfolio/browser",
             "index": "apps/portfolio/src/index.html",
             "main": "apps/portfolio/src/main.ts",
             "polyfills": "apps/portfolio/src/polyfills.ts",
@@ -113,9 +113,15 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/portfolio-server",
+            "outputPath": "dist/apps/portfolio/server",
             "main": "apps/portfolio/src/main.server.ts",
-            "tsConfig": "apps/portfolio/tsconfig.server.json"
+            "tsConfig": "apps/portfolio/tsconfig.server.json",
+            "stylePreprocessorOptions": {
+              "includePaths": [
+                "node_modules/bootstrap/scss",
+                "libs/common/styles/src/lib"
+              ]
+            }
           },
           "configurations": {
             "production": {
