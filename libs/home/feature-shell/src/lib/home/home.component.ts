@@ -1,5 +1,4 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
-import { TranslateService } from '@ngx-translate/core';
 import { BlogService } from '@portfolio/blog/data-access';
 import { Post, Project, Topic } from '@portfolio/data/models';
 import { ProjectsService } from '@portfolio/projects/data-access';
@@ -18,11 +17,8 @@ export class HomeComponent implements OnInit {
 
   constructor(
     private projectsService: ProjectsService,
-    private blogService: BlogService,
-    private translate: TranslateService
-  ) {
-    this.topics$ = this.translate.get('home.topics');
-  }
+    private blogService: BlogService
+  ) {}
 
   ngOnInit() {
     this.projects$ = this.projectsService.getProjects();

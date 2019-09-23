@@ -20,6 +20,7 @@ import {
 } from '@ngx-translate/core';
 import { CommonDirectivesModule } from '@portfolio/common/directives';
 import { CommonMaterialModule } from '@portfolio/common/material';
+import { CommonUiFooterModule } from '@portfolio/common/ui/footer';
 import { CommonUiHeaderModule } from '@portfolio/common/ui/header';
 import { CommonUiSidenavModule } from '@portfolio/common/ui/sidenav';
 import { ENVIRONMENT, HttpLoaderFactory } from '@portfolio/core/config';
@@ -49,6 +50,7 @@ import { AppComponent } from './app.component';
       }
     }),
     CommonMaterialModule,
+    CommonUiFooterModule,
     CommonUiHeaderModule,
     CommonUiSidenavModule,
     CommonDirectivesModule,

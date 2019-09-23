@@ -79,6 +79,9 @@
     },
     "blog-ui": {
       "tags": ["platform:frontend", "type:ui"]
+    },
+    "testing-utils": {
+      "tags": ["platform:shared", "type:utils"]
     }
   }
 }

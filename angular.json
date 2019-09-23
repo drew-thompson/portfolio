@@ -695,6 +695,31 @@
           "styleext": "scss"
         }
       }
+    },
+    "testing-utils": {
+      "root": "libs/testing/utils",
+      "sourceRoot": "libs/testing/utils/src",
+      "projectType": "library",
+      "schematics": {},
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/testing/utils/tsconfig.lib.json",
+              "libs/testing/utils/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/testing/utils/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/testing/utils/jest.config.js",
+            "tsConfig": "libs/testing/utils/tsconfig.spec.json"
+          }
+        }
+      }
     }
   },
   "cli": {

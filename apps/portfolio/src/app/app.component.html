@@ -30,6 +30,7 @@
   <mat-sidenav-content cdkScrollable>
     <ng-container *ngTemplateOutlet="header"></ng-container>
     <ng-container *ngTemplateOutlet="router"></ng-container>
+    <ng-container *ngTemplateOutlet="footer"></ng-container>
   </mat-sidenav-content>
 </mat-sidenav-container>
 
@@ -39,4 +40,8 @@
 
 <ng-template #router>
   <router-outlet></router-outlet>
+</ng-template>
+
+<ng-template #footer>
+  <portfolio-footer></portfolio-footer>
 </ng-template>

@@ -1,7 +1,9 @@
 <mat-card>
     <mat-card-header>
         <mat-card-title>{{ post.title }}</mat-card-title>
-        <mat-card-subtitle>{{ post.createdAt.toDate() | date:'MMM dd, yyyy' }}</mat-card-subtitle>
+        <ng-container *ngIf="post.createdAt">
+            <mat-card-subtitle>{{ post.createdAt.toDate() | date:'MMM dd, yyyy' }}</mat-card-subtitle>
+        </ng-container>
     </mat-card-header>
     <mat-card-content>
         <p>{{ post.description }}</p>

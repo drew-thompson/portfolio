@@ -2,7 +2,9 @@
     <mat-card-header>
         <mat-card-title>{{ project.title }}</mat-card-title>
         <mat-card-subtitle>
-            {{ project.start.toDate() | date:'MMM yyyy' }} -
+            <ng-container *ngIf="project.start">
+                {{ project.start.toDate() | date:'MMM yyyy' }} -
+            </ng-container>
             <ng-container *ngIf="project.end as end; else present">
                 {{ end.toDate() | date:'MMM yyyy' }}
             </ng-container>
