@@ -10,6 +10,15 @@ a.link {
 	font-size: 110%;
 }
 
+a.github {
+	position: absolute;
+	right: 0;
+	&,
+	img {
+		height: 2rem;
+	}
+}
+
 a.me {
 	position: absolute;
 	left: 0;
@@ -48,7 +57,7 @@ header {
 	}
 }
 
-.desktop.row {
+nav.row {
 	position: relative;
 }
 

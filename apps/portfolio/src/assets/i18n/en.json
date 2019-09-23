@@ -66,10 +66,13 @@
     },
     "libs": {
         "common": {
-            "sidenav": {},
+            "header": {
+                "github": "Github"
+            },
             "footer": {
                 "version": "Version {{ version }}"
-            }
+            },
+            "sidenav": {}
         },
         "projects": {
             "projectCard": {

@@ -8,7 +8,7 @@
 </header>
 
 <ng-template #mobile>
-    <nav fxLayout="row" class="row">
+    <nav fxLayout="row" fxLayoutAlign="center center" class="row">
         <ng-container *ngTemplateOutlet="me"></ng-container>
         <div style="margin-left: auto">
             <button (click)="sidenavService.toggle()" mat-icon-button>
@@ -24,17 +24,22 @@
         <ng-container *ngFor="let link of links">
             <a [routerLink]="link.url" class="link">{{ link.title }}</a>
         </ng-container>
-
+        <ng-container *ngTemplateOutlet="github"></ng-container>
     </nav>
 </ng-template>
 
 
 <ng-template #me>
     <a routerLink="/" class="me">
-        <img src="assets/icons/icon-128x128.png" alt="Drew Thompson">
+        <img src="assets/icons/icon-128x128.png" [alt]="'name.full' | translate">
     </a>
 </ng-template>
 
 <ng-template #name>
     <a routerLink="/" class="link name mat-display-1" translate>name.full</a>
+</ng-template>
+
+<ng-template #github>
+    <a href="https://github.com/drew-thompson" target="_blank" [title]="'libs.common.header.github' | translate"
+        class="github"><img src="assets/images/logos/github-mark-64x64.png"></a>
 </ng-template>
