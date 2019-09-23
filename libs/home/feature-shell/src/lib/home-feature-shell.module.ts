@@ -7,6 +7,7 @@ import { BlogUiModule } from '@portfolio/blog/ui';
 import { HomeUiModule } from '@portfolio/home/ui';
 import { ProjectsUiModule } from '@portfolio/projects/ui';
 import { SharedModule } from '@portfolio/shared';
+import { SharedUiModule } from '@portfolio/shared/ui';
 import { HomeComponent } from './home/home.component';
 
 export const homeFeatureShellRoutes: Route[] = [];
@@ -20,7 +21,8 @@ export const homeFeatureShellRoutes: Route[] = [];
     TranslateModule,
     HomeUiModule,
     ProjectsUiModule,
-    BlogUiModule
+    BlogUiModule,
+    SharedUiModule
   ],
   declarations: [HomeComponent],
   exports: [HomeComponent]

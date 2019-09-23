@@ -82,6 +82,9 @@
     },
     "testing-utils": {
       "tags": ["platform:shared", "type:utils"]
+    },
+    "shared-ui": {
+      "tags": ["platform:frontend", "type:ui"]
     }
   }
 }

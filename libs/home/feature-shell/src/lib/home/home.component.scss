@@ -5,6 +5,14 @@ portfolio-project-card.portfolio-project-card,
 portfolio-post-card.portfolio-post-card {
 	display: block;
 	max-width: 300px;
+	cursor: pointer;
+	@include rounded();
+
+	transform: scale(0.95);
+	transition: transform 100ms ease-in-out;
+	&:hover {
+		transform: scale(1);
+	}
 }
 
 h1 {
@@ -22,6 +30,13 @@ section {
 .avatar {
 	background-image: url('/assets/icons/icon-72x72.png');
 	background-size: cover;
+}
+
+.carousel {
+	overflow-x: scroll;
+	$padding: 0.25rem;
+	padding-top: $padding;
+	padding-bottom: $padding;
 }
 
 .me {
