@@ -1,14 +1,17 @@
+export interface Entity {
+  title: string;
+  description: string;
+  /** The app URL to navigate to upon clicking this link. */
+  url: string;
+  image: string;
+}
+
 /**
  * Used in conjuction with `<a/>` elements to connect a `routerLink` with text.
  * @example
  * <a [routerLink]="link.url">{{ link.title }}</a>
  */
-export interface Link {
-  /** The text to be displayed for this link. */
-  title: string;
-  /** The app URL to navigate to upon clicking this link. */
-  url: string;
-}
+export interface Link extends Pick<Entity, 'title' | 'url'> {}
 
 /**
  * A `mat-tile` represented within a `mat-grid-list`.
@@ -44,12 +47,4 @@ export interface Card {
   content?: string;
   image?: string;
   avatar?: string;
-}
-
-/**
- * An individual project.
- */
-export interface Project extends Link {
-  start: string;
-  end?: string;
 }

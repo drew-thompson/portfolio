@@ -1,4 +1,4 @@
-<div class="splash mb-5">
+<div class="splash mb-4">
     <div fxHide.gt-xs="true">
         <mat-card>
             <mat-card-header>
@@ -28,13 +28,22 @@
     </div>
 </div>
 
-<section class="container mat-typography">
+<section class="container mat-typography pb-5">
 
     <h3 translate>home.projects</h3>
-    <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1rem">
+    <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1rem" class="mt-3 mb-4">
         <ng-container *ngFor="let project of projects$ | async">
             <article>
-                {{ project | json }}
+                <portfolio-project-card fxFill [project]="project"></portfolio-project-card>
+            </article>
+        </ng-container>
+    </div>
+
+    <h3 translate>home.blog</h3>
+    <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1rem" class="mt-3">
+        <ng-container *ngFor="let post of posts$ | async">
+            <article>
+                <portfolio-post-card [post]="post"></portfolio-post-card>
             </article>
         </ng-container>
     </div>

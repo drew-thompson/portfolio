@@ -10,6 +10,8 @@ export class ProjectsService {
   constructor(private db: AngularFirestore) {}
 
   getProjects(): Observable<Project[]> {
-    return this.db.collection<Project>('projects').valueChanges();
+    return this.db
+      .collection<Project>('projects', ref => ref.orderBy('index', 'asc'))
+      .valueChanges();
   }
 }

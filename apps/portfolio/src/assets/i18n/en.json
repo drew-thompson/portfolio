@@ -35,7 +35,7 @@
     ],
     "home": {
         "projects": "Projects",
-        "blog": "Blog",
+        "blog": "Blog Posts",
         "topics": [
             {
                 "title": "Projects",
@@ -67,6 +67,11 @@
     "libs": {
         "common": {
             "sidenav": {}
+        },
+        "projects": {
+            "projectCard": {
+                "present": "Present"
+            }
         }
     }
 }

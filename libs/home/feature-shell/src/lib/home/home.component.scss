@@ -1,10 +1,10 @@
 @import 'functions', 'variables', 'mixins';
 @import 'p-variables', 'p-mixins';
 
-portfolio-topic {
+portfolio-project-card.portfolio-project-card,
+portfolio-post-card.portfolio-post-card {
 	display: block;
-	margin-bottom: 1rem;
-	min-width: 150px;
+	max-width: 300px;
 }
 
 h1 {

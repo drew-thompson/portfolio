@@ -70,6 +70,15 @@
     },
     "projects-data-access": {
       "tags": ["platform:frontend", "type:data-access"]
+    },
+    "projects-ui": {
+      "tags": ["platform:frontend", "type:ui"]
+    },
+    "blog-data-access": {
+      "tags": ["platform:frontend", "type:data-access"]
+    },
+    "blog-ui": {
+      "tags": ["platform:frontend", "type:ui"]
     }
   }
 }
