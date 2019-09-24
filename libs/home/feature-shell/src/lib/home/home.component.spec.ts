@@ -20,6 +20,7 @@ import { HomeUiModule } from '@portfolio/home/ui';
 import { ProjectsService } from '@portfolio/projects/data-access';
 import { ProjectsUiModule } from '@portfolio/projects/ui';
 import { SharedModule } from '@portfolio/shared';
+import { SharedUiModule } from '@portfolio/shared/ui';
 import { angularFirestoreStub } from '@portfolio/testing/utils';
 import { of } from 'rxjs';
 import { HomeComponent } from './home.component';
@@ -47,6 +48,7 @@ describe('HomeComponent', () => {
           }
         }),
         SharedModule,
+        SharedUiModule,
         HomeUiModule,
         BlogUiModule,
         ProjectsUiModule

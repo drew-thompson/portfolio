@@ -1,11 +1,17 @@
-<header>
-    <h1 class="mat-headline" translate>name.full</h1>
-</header>
-<nav fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.3rem">
-
-    <ng-container *ngFor="let link of links">
-        <div fxFlexFill class="link">
-            <a [routerLink]="link.url">{{ link.title }}</a>
+<header class="container px-5 text-center">
+    <h1 class="mat-headline mb-0" translate>name.full</h1>
+    <h2 class="mat-caption" translate>me.role</h2>
+    <nav fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="0.5rem" class="row">
+        <ng-container *ngFor="let link of links">
+            <div fxFlexFill class="col-12">
+                <a matRipple [routerLink]="link.url" class="link">{{ link.title }}</a>
+            </div>
+        </ng-container>
+        <div fxFlexFill class="col-12">
+            <a matRipple href="https://github.com/drew-thompson" target="_blank" class="link">
+                <span translate>libs.common.header.github</span>
+                <img src="assets/images/logos/github-mark-32x32.png" class="github">
+            </a>
         </div>
-    </ng-container>
-</nav>
+    </nav>
+</header>

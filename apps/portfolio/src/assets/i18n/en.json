@@ -6,6 +6,7 @@
     },
     "me": {
         "description": "Drew Thompson - Software Engineer & Consultant",
+        "role": "Software Engineer & Consultant",
         "shortBio": "Determined, diligent, and creative developer, specializing in combining strong technical, communication, and project management skills with an expertise in learning new technologies, and scaling quickly in enterprise-scale organizations."
     },
     "links": [
@@ -72,7 +73,9 @@
             "footer": {
                 "version": "Version {{ version }}"
             },
-            "sidenav": {}
+            "sidenav": {
+                "github": "Github"
+            }
         },
         "projects": {
             "projectCard": {
