@@ -1,10 +1,18 @@
 @import 'functions', 'variables', 'mixins';
 @import 'p-variables', 'p-mixins';
 
-portfolio-topic {
+portfolio-project-card.portfolio-project-card,
+portfolio-post-card.portfolio-post-card {
 	display: block;
-	margin-bottom: 1rem;
-	min-width: 150px;
+	max-width: 300px;
+	cursor: pointer;
+	@include rounded();
+
+	transform: scale(0.95);
+	transition: transform 100ms ease-in-out;
+	&:hover {
+		transform: scale(1);
+	}
 }
 
 h1 {
@@ -24,6 +32,14 @@ section {
 	background-size: cover;
 }
 
+.carousel {
+	overflow-x: scroll;
+	$padding: 0.25rem;
+	padding-top: $padding;
+	padding-bottom: $padding;
+	margin-left: -$padding;
+}
+
 .me {
 	max-width: 100%;
 
@@ -34,7 +50,7 @@ section {
 
 .splash {
 	margin-top: -$header-height-collapsed;
-	padding: ($header-height-collapsed + 1rem) 1rem 3rem 1rem;
+	padding: ($header-height-collapsed + 2.5rem) 1rem 3rem 1rem;
 	z-index: -1;
 	width: 100vw;
 	@include background-color($purple, 500);

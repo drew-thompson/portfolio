@@ -1,8 +1,12 @@
+import { HttpClient } from '@angular/common/http';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterTestingModule } from '@angular/router/testing';
+import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { CommonMaterialModule } from '@portfolio/common/material';
 import { SidenavService } from '@portfolio/common/services';
+import { HttpLoaderFactory } from '@portfolio/core/config';
 import { HeaderComponent } from './header.component';
 
 describe('HeaderComponent', () => {
@@ -12,7 +16,19 @@ describe('HeaderComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      imports: [RouterTestingModule, FlexLayoutModule, CommonMaterialModule],
+      imports: [
+        HttpClientTestingModule,
+        RouterTestingModule,
+        FlexLayoutModule,
+        TranslateModule.forRoot({
+          loader: {
+            provide: TranslateLoader,
+            useFactory: HttpLoaderFactory,
+            deps: [HttpClient]
+          }
+        }),
+        CommonMaterialModule
+      ],
       declarations: [HeaderComponent]
     }).compileComponents();
   }));

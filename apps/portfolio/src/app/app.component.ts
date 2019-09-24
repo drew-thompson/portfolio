@@ -10,13 +10,13 @@ import {
 import { AngularFirestore } from '@angular/fire/firestore';
 import { AngularFireFunctions } from '@angular/fire/functions';
 import { MatSidenav } from '@angular/material';
+import { SwUpdate } from '@angular/service-worker';
 import { TranslateService } from '@ngx-translate/core';
 import { Message, Person } from '@portfolio/api-interface';
 import { SidenavService } from '@portfolio/common/services';
 import { Link } from '@portfolio/data/models';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
 import { first, map, startWith, tap } from 'rxjs/operators';
-import { SwUpdate } from '@angular/service-worker';
 
 @Component({
   selector: 'portfolio-root',

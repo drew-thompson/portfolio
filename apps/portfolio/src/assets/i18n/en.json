@@ -6,6 +6,7 @@
     },
     "me": {
         "description": "Drew Thompson - Software Engineer & Consultant",
+        "role": "Software Engineer & Consultant",
         "shortBio": "Determined, diligent, and creative developer, specializing in combining strong technical, communication, and project management skills with an expertise in learning new technologies, and scaling quickly in enterprise-scale organizations."
     },
     "links": [
@@ -34,28 +35,52 @@
         "years ago"
     ],
     "home": {
-        "projects": "View Projects",
-        "blog": "Read It All",
+        "projects": "Projects",
+        "blog": "Blog Posts",
         "topics": [
             {
                 "title": "Projects",
-                "image": "https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?cs=srgb&dl=blur-code-coding-270408.jpg&fm=jpg",
-                "subtitle": "All of the fun, challenging, and exciting projects I've been able to be a part of.",
-                "description": "It's always a pleasure to put my heart into a project and see how far I can go with it.",
+                "description": "All of the fun, challenging, and exciting projects I've been able to be a part of.",
                 "url": "/projects"
             },
             {
-                "title": "Blog",
-                "image": "https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500",
-                "subtitle": "What I have to say about the tech I use.",
-                "description": "Test",
+                "title": "My Blog",
+                "description": "What I have to say about the tech I use, guides, how-to's, and everything you've dreamed of.",
                 "url": "/writing"
+            }
+        ]
+    },
+    "projects": {
+        "items": [
+            {
+                "title": "CommonGenius",
+                "start": "2018-04-22T10:00:00+0000",
+                "url": "commongenius"
+            },
+            {
+                "title": "FloriVR",
+                "start": "2017-11-15T10:00:00+0000",
+                "end": "2017-12-15T10:00:00+0000",
+                "url": "flori-vr"
             }
         ]
     },
     "libs": {
         "common": {
-            "sidenav": {}
+            "header": {
+                "github": "Github"
+            },
+            "footer": {
+                "version": "Version {{ version }}"
+            },
+            "sidenav": {
+                "github": "Github"
+            }
+        },
+        "projects": {
+            "projectCard": {
+                "present": "Present"
+            }
         }
     }
 }

@@ -1,4 +1,4 @@
-<div class="splash mb-5">
+<div class="splash mb-4">
     <div fxHide.gt-xs="true">
         <mat-card>
             <mat-card-header>
@@ -6,13 +6,12 @@
                 <mat-card-title translate>name.full</mat-card-title>
                 <mat-card-subtitle translate>me.description</mat-card-subtitle>
             </mat-card-header>
-            <img mat-card-image src="assets/images/drew-sm.jpg" [alt]="'name.full' | translate">
+            <img mat-card-image src="assets/images/drew-xs.jpg" [alt]="'name.full' | translate">
             <mat-card-content>
                 <p translate>me.shortBio</p>
             </mat-card-content>
         </mat-card>
     </div>
-
 
     <div fxHide fxShow.gt-xs="true" class="container">
         <div class="row no-gutters">
@@ -23,20 +22,55 @@
                 </header>
             </div>
             <div fxLayout="row" fxLayoutAlign="center start" class="col offset-sm-1 col-sm-4 offset-md-0">
-                <img src="assets/images/drew-md.jpg" [alt]="'name.full' | translate" class="mx-auto mx-md-0 me rounded">
+                <img src="assets/images/drew-xs.jpg" [alt]="'name.full' | translate" class="mx-auto mx-md-0 me rounded">
             </div>
         </div>
     </div>
 </div>
 
-<section class="container mat-typography">
+<section class="container mat-typography pb-5">
 
-    <ng-container *ngFor="let topic of topics$ | async; let i=index">
-        <article fxLayout="column" [fxLayout.gt-sm]=" isOdd(i) ? 'row-reverse' : 'row'" fxLayoutAlign="center center"
-            class="row my-3 my-sm-5 my-md-6">
+    <div class="row">
+        <h3 class="col-12" translate>home.projects</h3>
+        <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap=".95rem" class="mt-3 mb-4 col-12 carousel">
+            <ng-container *ngIf="projects$ | async as projects; else loading">
+                <ng-container *ngIf="projects.length; else loading">
+                    <ng-container *ngFor="let project of projects">
+                        <article>
+                            <portfolio-project-card matRipple fxFill [project]="project"></portfolio-project-card>
+                        </article>
+                    </ng-container>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 class="col-12" translate>home.blog</h3>
+        <div fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1rem" class="mt-3 col-12 carousel">
+            <ng-container *ngIf="posts$ | async as posts; else loading">
+                <ng-container *ngIf="posts.length; else loading">
+                    <ng-container *ngFor="let post of posts">
+                        <article>
+                            <portfolio-post-card matRipple [post]="post"></portfolio-post-card>
+                        </article>
+                    </ng-container>
+                </ng-container>
+            </ng-container>
+        </div>
+    </div>
+
+    <!-- <ng-container *ngFor="let topic of topics$ | async; let i=index">
+        <h3>{{ topic.title }}</h3>
+
+        <article fxLayout="row" fxLayoutAlign="start start" fxLayoutGap="1rem">
+            <portfolio-topic [topic]="topic"></portfolio-topic>
+        </article>
+
+        <article fxLayout="column" [fxLayout.gt-sm]=" isOdd(i) ? 'row-reverse' : 'row'" fxLayoutAlign="center start"
+            class="row my-3 my-sm-5 my-md-6 wc">
             <div class="col-12 col-sm-8">
-                <h3>{{ topic.title }}</h3>
-                <p>{{ topic.description }}</p>
+                <p>{{ topic.content }}</p>
             </div>
             <div class="col-12 col-sm-4">
                 <portfolio-topic [topic]="topic">
@@ -46,6 +80,11 @@
                 </portfolio-topic>
             </div>
         </article>
-    </ng-container>
+    </ng-container> -->
+
 
 </section>
+
+<ng-template #loading>
+    <shared-loader class="ml-3"></shared-loader>
+</ng-template>

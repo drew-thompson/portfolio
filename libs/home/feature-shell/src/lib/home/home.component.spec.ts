@@ -4,6 +4,8 @@ import {
   HttpTestingController
 } from '@angular/common/http/testing';
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestore } from '@angular/fire/firestore';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { RouterTestingModule } from '@angular/router/testing';
 import {
@@ -11,9 +13,15 @@ import {
   TranslateModule,
   TranslateService
 } from '@ngx-translate/core';
+import { BlogService } from '@portfolio/blog/data-access';
+import { BlogUiModule } from '@portfolio/blog/ui';
 import { HttpLoaderFactory } from '@portfolio/core/config';
 import { HomeUiModule } from '@portfolio/home/ui';
+import { ProjectsService } from '@portfolio/projects/data-access';
+import { ProjectsUiModule } from '@portfolio/projects/ui';
 import { SharedModule } from '@portfolio/shared';
+import { SharedUiModule } from '@portfolio/shared/ui';
+import { angularFirestoreStub } from '@portfolio/testing/utils';
 import { of } from 'rxjs';
 import { HomeComponent } from './home.component';
 
@@ -22,6 +30,9 @@ describe('HomeComponent', () => {
   let translate: TranslateService;
   let fixture: ComponentFixture<HomeComponent>;
   let http: HttpTestingController;
+  let projectsService: ProjectsService;
+  let blogService: BlogService;
+  let angularFirestore: AngularFireModule;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
@@ -37,36 +48,29 @@ describe('HomeComponent', () => {
           }
         }),
         SharedModule,
-        HomeUiModule
+        SharedUiModule,
+        HomeUiModule,
+        BlogUiModule,
+        ProjectsUiModule
       ],
       declarations: [HomeComponent],
-      providers: [TranslateService]
+      providers: [
+        TranslateService,
+        { provide: AngularFirestore, useValue: angularFirestoreStub }
+      ]
     }).compileComponents();
     translate = TestBed.get(TranslateService);
     http = TestBed.get(HttpTestingController);
+    angularFirestore = TestBed.get(AngularFirestore);
+    projectsService = TestBed.get(ProjectsService);
+    blogService = TestBed.get(BlogService);
   }));
 
   beforeEach(() => {
     fixture = TestBed.createComponent(HomeComponent);
     component = fixture.componentInstance;
-    component.topics$ = of([
-      {
-        title: 'Projects',
-        image:
-          'https://images.pexels.com/photos/270408/pexels-photo-270408.jpeg?cs=srgb&dl=blur-code-coding-270408.jpg&fm=jpg',
-        subtitle:
-          "All of the fun, challenging, and exciting projects I've been able to be a part of.",
-        description:
-          "It's always a pleasure to put my heart into a project and see how far I can go with it."
-      },
-      {
-        title: 'Blog',
-        image:
-          'https://images.pexels.com/photos/262508/pexels-photo-262508.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500',
-        subtitle: 'What I have to say about the tech I use.',
-        description: 'Test'
-      }
-    ]);
+    component.projects$ = of([]);
+    component.posts$ = of([]);
     fixture.detectChanges();
   });
 

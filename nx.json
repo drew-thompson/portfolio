@@ -67,6 +67,24 @@
     },
     "home-ui": {
       "tags": ["platform:frontend", "type:ui"]
+    },
+    "projects-data-access": {
+      "tags": ["platform:frontend", "type:data-access"]
+    },
+    "projects-ui": {
+      "tags": ["platform:frontend", "type:ui"]
+    },
+    "blog-data-access": {
+      "tags": ["platform:frontend", "type:data-access"]
+    },
+    "blog-ui": {
+      "tags": ["platform:frontend", "type:ui"]
+    },
+    "testing-utils": {
+      "tags": ["platform:shared", "type:utils"]
+    },
+    "shared-ui": {
+      "tags": ["platform:frontend", "type:ui"]
     }
   }
 }
