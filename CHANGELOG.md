@@ -1,3 +1,10 @@
+## [1.8.1](https://github.com/drew-thompson/portfolio/compare/v1.8.0...v1.8.1) (2019-09-24)
+
+
+### Performance Improvements
+
+* **home:** optimize portrait images ([6481516](https://github.com/drew-thompson/portfolio/commit/6481516))
+
 # [1.8.0](https://github.com/drew-thompson/portfolio/compare/v1.7.0...v1.8.0) (2019-09-16)
 
 
