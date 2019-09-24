@@ -5,6 +5,15 @@ header {
 	// @include background-color($green, 100);
 }
 
+hr {
+	margin-bottom: 0.5rem;
+}
+
+img.github {
+	height: 1.5rem;
+	margin-left: auto;
+}
+
 nav {
 	padding: 0.75rem 0.5rem 2rem;
 	min-width: 33vw;
@@ -18,9 +27,4 @@ nav {
 		@include rounded();
 		@include background-color($green, 100);
 	}
-}
-
-img.github {
-	height: 1.5rem;
-	margin-left: auto;
 }
