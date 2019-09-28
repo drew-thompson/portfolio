@@ -1,93 +1,93 @@
 {
-    "name": {
-        "first": "Drew",
-        "last": "Thompson",
-        "full": "Drew Thompson"
+  "name": {
+    "first": "Drew",
+    "last": "Thompson",
+    "full": "Drew Thompson"
+  },
+  "me": {
+    "description": "Drew Thompson - Software Engineer & Consultant",
+    "role": "Software Engineer & Consultant",
+    "shortBio": "Determined, diligent, and creative developer, specializing in combining strong technical, communication, and project management skills with an expertise in learning new technologies, and scaling quickly in enterprise-scale organizations."
+  },
+  "links": [
+    {
+      "title": "Projects",
+      "url": "/projects"
     },
-    "me": {
-        "description": "Drew Thompson - Software Engineer & Consultant",
-        "role": "Software Engineer & Consultant",
-        "shortBio": "Determined, diligent, and creative developer, specializing in combining strong technical, communication, and project management skills with an expertise in learning new technologies, and scaling quickly in enterprise-scale organizations."
-    },
-    "links": [
-        {
-            "title": "Projects",
-            "url": "/projects"
-        },
-        {
-            "title": "Blog",
-            "url": "/writing"
-        }
-    ],
-    "lastClicked": "Last Time Clicked: {{ time }}",
-    "updateTime": "Please Click Me!",
-    "timestamps": [
-        "< 1 minute ago",
-        "1 minute ago",
-        "minutes ago",
-        "1 hour ago",
-        "hours ago",
-        "1 day ago",
-        "days ago",
-        "1 month ago",
-        "months ago",
-        "1 year ago",
-        "years ago"
-    ],
-    "home": {
-        "projects": "Projects",
-        "blog": "Blog Posts",
-        "topics": [
-            {
-                "title": "Projects",
-                "description": "All of the fun, challenging, and exciting projects I've been able to be a part of.",
-                "url": "/projects"
-            },
-            {
-                "title": "My Blog",
-                "description": "What I have to say about the tech I use, guides, how-to's, and everything you've dreamed of.",
-                "url": "/writing"
-            }
-        ]
+    {
+      "title": "Blog",
+      "url": "/writing"
+    }
+  ],
+  "lastClicked": "Last Time Clicked: {{ time }}",
+  "updateTime": "Please Click Me!",
+  "timestamps": [
+    "< 1 minute ago",
+    "1 minute ago",
+    "minutes ago",
+    "1 hour ago",
+    "hours ago",
+    "1 day ago",
+    "days ago",
+    "1 month ago",
+    "months ago",
+    "1 year ago",
+    "years ago"
+  ],
+  "home": {
+    "projects": "Projects",
+    "blog": "Blog Posts",
+    "topics": [
+      {
+        "title": "Projects",
+        "description": "All of the fun, challenging, and exciting projects I've been able to be a part of.",
+        "url": "/projects"
+      },
+      {
+        "title": "My Blog",
+        "description": "What I have to say about the tech I use, guides, how-to's, and everything you've dreamed of.",
+        "url": "/writing"
+      }
+    ]
+  },
+  "projects": {
+    "items": [
+      {
+        "title": "CommonGenius",
+        "start": "2018-04-22T10:00:00+0000",
+        "url": "commongenius"
+      },
+      {
+        "title": "FloriVR",
+        "start": "2017-11-15T10:00:00+0000",
+        "end": "2017-12-15T10:00:00+0000",
+        "url": "flori-vr"
+      }
+    ]
+  },
+  "libs": {
+    "common": {
+      "header": {
+        "github": "Github",
+        "linkedin": "LinkedIn"
+      },
+      "footer": {
+        "version": "Version {{ version }}"
+      },
+      "sidenav": {
+        "github": "Github",
+        "linkedin": "LinkedIn"
+      }
     },
     "projects": {
-        "items": [
-            {
-                "title": "CommonGenius",
-                "start": "2018-04-22T10:00:00+0000",
-                "url": "commongenius"
-            },
-            {
-                "title": "FloriVR",
-                "start": "2017-11-15T10:00:00+0000",
-                "end": "2017-12-15T10:00:00+0000",
-                "url": "flori-vr"
-            }
-        ]
+      "projectCard": {
+        "present": "Present"
+      }
     },
-    "libs": {
-        "common": {
-            "header": {
-                "github": "Github",
-                "linkedin": "LinkedIn"
-            },
-            "footer": {
-                "version": "Version {{ version }}"
-            },
-            "sidenav": {
-                "github": "Github",
-                "linkedin": "LinkedIn"
-            }
-        },
-        "projects": {
-            "projectCard": {
-                "present": "Present"
-            }
-        },
-        "shared": {
-            "timestampRange": {
-                "present": "Present"
-            }
-        }
+    "shared": {
+      "timestampRange": {
+        "present": "Present"
+      }
     }
+  }
 }

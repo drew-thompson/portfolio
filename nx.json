@@ -97,6 +97,9 @@
     },
     "projects-utils": {
       "tags": ["platform:frontend", "type:util"]
+    },
+    "styleguide-feature": {
+      "tags": ["platform:frontend", "type:feature"]
     }
   }
 }

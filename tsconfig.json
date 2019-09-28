@@ -42,7 +42,8 @@
       "@portfolio/projects/feature-detail": ["libs/projects/feature-detail/src/index.ts"],
       "@portfolio/projects/feature-shell": ["libs/projects/feature-shell/src/index.ts"],
       "@portfolio/projects/feature-listing": ["libs/projects/feature-listing/src/index.ts"],
-      "@portfolio/projects/utils": ["libs/projects/utils/src/index.ts"]
+      "@portfolio/projects/utils": ["libs/projects/utils/src/index.ts"],
+      "@portfolio/styleguide/feature": ["libs/styleguide/feature/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

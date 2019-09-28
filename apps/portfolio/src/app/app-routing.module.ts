@@ -14,6 +14,10 @@ const routes: Routes = [
     loadChildren: () => import('@portfolio/projects/feature-shell').then(m => m.ProjectsFeatureShellModule)
   },
   {
+    path: 'styleguide',
+    loadChildren: () => import('@portfolio/styleguide/feature').then(m => m.StyleguideFeatureModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }

@@ -8,9 +8,8 @@ describe('TimestampComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimestampComponent ]
-    })
-    .compileComponents();
+      declarations: [TimestampComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

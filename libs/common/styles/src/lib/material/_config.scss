@@ -4,18 +4,18 @@ $roboto: 'Roboto, sans-serif';
 $lato: 'Lato, sans-serif';
 
 $custom-typography: mat-typography-config(
-	$font-family: $roboto,
-	$display-4: mat-typography-level(7rem, 7rem, 300),
-	$display-3: mat-typography-level(3.5rem, 4rem, 300),
-	$display-2: mat-typography-level(3rem, 3rem, 300),
-	$display-1: mat-typography-level(2.125rem, 2.5rem, 300),
-	$headline: mat-typography-level(2rem, 3rem, 300, $lato),
-	$title: mat-typography-level(1.75rem, 2.25rem, 300, $lato),
-	$subheading-2: mat-typography-level(2.25rem, 2.75rem, 300, $lato),
-	$subheading-1: mat-typography-level(1.75rem, 2rem, 300, $lato),
-	$body-1: mat-typography-level(15px, 1.5rem, 300, $lato),
-	$body-2: mat-typography-level(14px, 1.5rem, 300, $lato),
-	$caption: mat-typography-level(12px, 20px, 300, $lato),
-	$button: mat-typography-level(14px, 14px, 300),
-	$input: mat-typography-level(1rem, 1.125, 300) /* Line-height must be unit-less fraction of the font-size. */
+  $font-family: $roboto,
+  $display-4: mat-typography-level(7rem, 7rem, 300),
+  $display-3: mat-typography-level(3.5rem, 4rem, 300),
+  $display-2: mat-typography-level(3rem, 3rem, 300),
+  $display-1: mat-typography-level(2.125rem, 2.5rem, 300),
+  $headline: mat-typography-level(2.5rem, 3rem, 300, $lato),
+  $title: mat-typography-level(1.75rem, 2.25rem, 300, $lato),
+  $subheading-2: mat-typography-level(2.25rem, 2.75rem, 300, $lato),
+  $subheading-1: mat-typography-level(1.25rem, 1.75rem, 300, $lato),
+  $body-1: mat-typography-level(15px, 1.5rem, 300, $lato),
+  $body-2: mat-typography-level(14px, 1.5rem, 300, $lato),
+  $caption: mat-typography-level(12px, 20px, 300, $lato),
+  $button: mat-typography-level(14px, 14px, 300),
+  $input: mat-typography-level(1rem, 1.125, 300) /* Line-height must be unit-less fraction of the font-size. */
 );

@@ -8,9 +8,8 @@ describe('TimestampRangeComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ TimestampRangeComponent ]
-    })
-    .compileComponents();
+      declarations: [TimestampRangeComponent]
+    }).compileComponents();
   }));
 
   beforeEach(() => {

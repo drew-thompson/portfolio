@@ -1,12 +1,12 @@
 import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'portfolio-listing',
-  templateUrl: './listing.component.html',
-  styleUrls: ['./listing.component.scss'],
+  selector: 'portfolio-styleguide',
+  templateUrl: './styleguide.component.html',
+  styleUrls: ['./styleguide.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
 })
-export class ListingComponent implements OnInit {
+export class StyleguideComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
