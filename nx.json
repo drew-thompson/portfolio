@@ -85,6 +85,9 @@
     },
     "shared-ui": {
       "tags": ["platform:frontend", "type:ui"]
+    },
+    "styleguide-feature": {
+      "tags": ["platform:frontend", "type:feature"]
     }
   }
 }
