@@ -91,6 +91,9 @@
     },
     "projects-feature-shell": {
       "tags": ["platform:frontend", "type:feature"]
+    },
+    "projects-feature-listing": {
+      "tags": ["platform:frontend", "type:feature"]
     }
   }
 }

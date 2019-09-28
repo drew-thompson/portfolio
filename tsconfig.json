@@ -40,7 +40,8 @@
       "@portfolio/testing/utils": ["libs/testing/utils/src/index.ts"],
       "@portfolio/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@portfolio/projects/feature-detail": ["libs/projects/feature-detail/src/index.ts"],
-      "@portfolio/projects/feature-shell": ["libs/projects/feature-shell/src/index.ts"]
+      "@portfolio/projects/feature-shell": ["libs/projects/feature-shell/src/index.ts"],
+      "@portfolio/projects/feature-listing": ["libs/projects/feature-listing/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]
