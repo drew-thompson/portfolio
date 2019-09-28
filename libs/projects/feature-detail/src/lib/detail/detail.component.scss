@@ -1,0 +1,9 @@
+@import 'p-variables';
+
+pre {
+	white-space: pre-line;
+}
+
+section.container {
+	min-height: calc(100vh - #{$footer-height} - #{$header-height-collapsed});
+}

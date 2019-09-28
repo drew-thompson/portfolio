@@ -1,3 +1,10 @@
+@import 'p-variables';
+
+footer {
+	height: $footer-height;
+}
+
 h6 {
 	display: inline-block;
+	margin: 0;
 }

@@ -1,5 +1,12 @@
-<p>detail works!</p>
+<section class="container">
+    <ng-container *ngIf="project$ | async as project; else missing">
+        <pre>{{ project | json }}</pre>
+    </ng-container>
+</section>
 
-<pre>
-    {{ project$ | async | json }}
-</pre>
+<ng-template #missing>
+    <header>
+        <h1>Nope.</h1>
+        <h2>Sorry, this project wasn't found.</h2>
+    </header>
+</ng-template>
