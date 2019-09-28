@@ -10,6 +10,13 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'styleguide',
+    loadChildren: () =>
+      import('@portfolio/styleguide/feature').then(
+        m => m.StyleguideFeatureModule
+      )
+  },
+  {
     path: '**',
     redirectTo: ''
   }
