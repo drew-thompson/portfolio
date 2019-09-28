@@ -43,6 +43,9 @@
       "@portfolio/shared/ui": ["libs/shared/ui/src/index.ts"],
       "@portfolio/projects/feature-detail": [
         "libs/projects/feature-detail/src/index.ts"
+      ],
+      "@portfolio/projects/feature-shell": [
+        "libs/projects/feature-shell/src/index.ts"
       ]
     }
   },
