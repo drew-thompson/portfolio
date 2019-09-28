@@ -1,5 +1,8 @@
 # Portfolio
 
+![CircleCI](https://img.shields.io/circleci/build/github/drew-thompson/portfolio?logo=circleci&token=88552891328664510f6859bd73ea84f88ae81471)
+![GitHub package.json version](https://img.shields.io/github/package-json/v/drew-thompson/portfolio?logo=github)
+
 This project was generated using [Nx](https://nx.dev).
 
 <p align="center"><img src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" width="450"></p>
