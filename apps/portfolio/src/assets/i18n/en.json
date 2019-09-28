@@ -68,13 +68,15 @@
     "libs": {
         "common": {
             "header": {
-                "github": "Github"
+                "github": "Github",
+                "linkedin": "LinkedIn"
             },
             "footer": {
                 "version": "Version {{ version }}"
             },
             "sidenav": {
-                "github": "Github"
+                "github": "Github",
+                "linkedin": "LinkedIn"
             }
         },
         "projects": {

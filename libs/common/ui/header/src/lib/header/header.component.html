@@ -24,7 +24,10 @@
         <ng-container *ngFor="let link of links">
             <a [routerLink]="link.url" class="link">{{ link.title }}</a>
         </ng-container>
-        <ng-container *ngTemplateOutlet="github"></ng-container>
+        <div class="social">
+            <ng-container *ngTemplateOutlet="github"></ng-container>
+            <ng-container *ngTemplateOutlet="linkedin"></ng-container>
+        </div>
     </nav>
 </ng-template>
 
@@ -40,6 +43,14 @@
 </ng-template>
 
 <ng-template #github>
-    <a href="https://github.com/drew-thompson" target="_blank" [title]="'libs.common.header.github' | translate"
-        class="github"><img src="assets/images/logos/github-mark-64x64.png"></a>
+    <a href="https://github.com/drew-thompson" target="_blank" [title]="'libs.common.header.github' | translate">
+        <img src="assets/images/logos/github-mark-64x64.png">
+    </a>
+</ng-template>
+
+<ng-template #linkedin>
+    <a href="https://linkedin.com/in/drew-thompson/" target="_blank"
+        [title]="'libs.common.header.linkedin' | translate">
+        <img src="assets/images/logos/linkedin-in-64x64.png">
+    </a>
 </ng-template>

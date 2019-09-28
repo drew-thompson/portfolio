@@ -10,15 +10,6 @@ a.link {
 	font-size: 110%;
 }
 
-a.github {
-	position: absolute;
-	right: 0;
-	&,
-	img {
-		height: 2rem;
-	}
-}
-
 a.me {
 	position: absolute;
 	left: 0;
@@ -63,4 +54,20 @@ nav.row {
 
 .w-100 {
 	width: 100%;
+}
+
+.social {
+	position: absolute;
+	right: 0;
+
+	a {
+		display: inline-block;
+		&:last-child {
+			margin-left: 0.5rem;
+		}
+	}
+	&,
+	img {
+		height: 2rem;
+	}
 }
