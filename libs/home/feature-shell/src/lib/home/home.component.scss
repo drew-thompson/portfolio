@@ -15,6 +15,13 @@ portfolio-post-card.portfolio-post-card {
 	}
 }
 
+a {
+	&,
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 h1 {
 	margin-bottom: 1rem;
 }

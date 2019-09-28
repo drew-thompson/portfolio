@@ -37,7 +37,9 @@
                 <ng-container *ngIf="projects.length; else loading">
                     <ng-container *ngFor="let project of projects">
                         <article>
-                            <portfolio-project-card matRipple fxFill [project]="project"></portfolio-project-card>
+                            <a routerLink="/projects/{{ project.url }}">
+                                <portfolio-project-card matRipple fxFill [project]="project"></portfolio-project-card>
+                            </a>
                         </article>
                     </ng-container>
                 </ng-container>
