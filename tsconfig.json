@@ -40,7 +40,10 @@
       "@portfolio/blog/data-access": ["libs/blog/data-access/src/index.ts"],
       "@portfolio/blog/ui": ["libs/blog/ui/src/index.ts"],
       "@portfolio/testing/utils": ["libs/testing/utils/src/index.ts"],
-      "@portfolio/shared/ui": ["libs/shared/ui/src/index.ts"]
+      "@portfolio/shared/ui": ["libs/shared/ui/src/index.ts"],
+      "@portfolio/projects/feature-detail": [
+        "libs/projects/feature-detail/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

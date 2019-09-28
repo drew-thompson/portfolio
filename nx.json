@@ -85,6 +85,9 @@
     },
     "shared-ui": {
       "tags": ["platform:frontend", "type:ui"]
+    },
+    "projects-feature-detail": {
+      "tags": ["platform:frontend", "type:feature"]
     }
   }
 }
