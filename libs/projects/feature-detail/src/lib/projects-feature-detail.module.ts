@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
+import { ProjectResolver } from '@portfolio/projects/utils';
 import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
@@ -10,7 +11,8 @@ import { DetailComponent } from './detail/detail.component';
       {
         path: '',
         pathMatch: 'full',
-        component: DetailComponent
+        component: DetailComponent,
+        resolve: { project: ProjectResolver }
       }
     ])
   ],
