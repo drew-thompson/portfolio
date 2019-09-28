@@ -1,0 +1,8 @@
+<shared-timestamp [time]="start"></shared-timestamp> -
+<ng-container *ngIf="end; else present">
+    <shared-timestamp [time]="end"></shared-timestamp>
+</ng-container>
+
+<ng-template #present>
+    {{ 'libs.shared.timestampRange.present' | translate }}
+</ng-template>

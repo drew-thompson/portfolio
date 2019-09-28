@@ -1,5 +1,6 @@
 <section class="container">
     <ng-container *ngIf="project$ | async as project; else missing">
+        <ng-container *ngTemplateOutlet="header; context: getContext(project)"></ng-container>
         <pre>{{ project | json }}</pre>
     </ng-container>
 </section>
@@ -8,5 +9,16 @@
     <header>
         <h1>Nope.</h1>
         <h2>Sorry, this project wasn't found.</h2>
+    </header>
+</ng-template>
+
+<ng-template #header let-project>
+    <header class="mat-typography">
+        <h1>{{ project.title }}</h1>
+        <h4>
+            <shared-timestamp-range [start]="project.start" [end]="project.end"></shared-timestamp-range>
+        </h4>
+
+        <h2>{{ project.description }}</h2>
     </header>
 </ng-template>

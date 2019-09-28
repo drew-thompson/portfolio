@@ -18,4 +18,8 @@ export class DetailComponent implements OnInit {
   ngOnInit() {
     this.project$ = this.route.data.pipe(map((data: { project: Project }) => data.project));
   }
+
+  getContext(project: Project): object {
+    return { $implicit: project };
+  }
 }

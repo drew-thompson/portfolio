@@ -1,3 +1,5 @@
+import { Timestamp } from '@firebase/firestore-types';
+
 export interface Entity {
   title: string;
   description: string;
@@ -48,3 +50,9 @@ export interface Card {
   image?: string;
   avatar?: string;
 }
+
+/**
+ * Re-export timestamp interface to resolve compile-time issues.
+ */
+// tslint:disable-next-line: no-empty-interface
+export interface Timestamp extends Timestamp {}
