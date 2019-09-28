@@ -10,6 +10,10 @@ const routes: Routes = [
     component: HomeComponent
   },
   {
+    path: 'projects',
+    loadChildren: () => import('@portfolio/projects/feature-shell').then(m => m.ProjectsFeatureShellModule)
+  },
+  {
     path: '**',
     redirectTo: ''
   }
