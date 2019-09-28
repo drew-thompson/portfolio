@@ -1,3 +1,10 @@
+# [1.9.0](https://github.com/drew-thompson/portfolio/compare/v1.8.1...v1.9.0) (2019-09-28)
+
+
+### Features
+
+* create styleguide page ([ffa1683](https://github.com/drew-thompson/portfolio/commit/ffa1683))
+
 ## [1.8.1](https://github.com/drew-thompson/portfolio/compare/v1.8.0...v1.8.1) (2019-09-24)
 
 
