@@ -5,25 +5,41 @@
   <hr />
 </header>
 
-<section class="container mat-typography">
+<section fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign.gt-sm="space-around center" class="container">
   <header>
-    <h1>Title (H1)</h1>
-    <h2>Subtitle (H2)</h2>
+    <h1 class="display-1">Display 1</h1>
+    <h1 class="display-2">Display 2</h1>
+    <h1 class="display-3">Display 3</h1>
+    <h1 class="display-4">Display 4</h1>
   </header>
 
-  <h3>Section (H3)</h3>
-  <h4>Subsection (H4)</h4>
-  <h5>Important (H5)</h5>
-  <h6>Minorly Important (H6)</h6>
+  <header class="mat-typography">
+    <h1>Title (H1)</h1>
+    <h2>Subtitle (H2)</h2>
+
+    <h3>Section (H3)</h3>
+    <h4>Subsection (H4)</h4>
+    <h5>Important (H5)</h5>
+    <h6>Minorly Important (H6)</h6>
+  </header>
+</section>
+
+<section class="container mat-typography">
+  <hr>
 
   <p>
-    This is what it looks like to write paragraphs, though I haven't done much of this yet. The quick fox jumps over the
-    lazy, brown dog. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quae! Eius, pariatur sunt. Iusto
+    This is what it looks like to write paragraphs, though I haven't done much of this yet. The quick fox jumps over
+    the
+    lazy, brown dog. Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, quae! Eius, pariatur sunt.
+    Iusto
     praesentium, est error itaque reprehenderit harum architecto inventore fugiat enim recusandae modi maiores vitae,
-    fugit dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, rem ex? Fugit praesentium maiores
-    inventore tempore eligendi ipsa obcaecati enim, molestiae, natus culpa, eos et quisquam optio accusantium asperiores
+    fugit dolores. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi, rem ex? Fugit praesentium
+    maiores
+    inventore tempore eligendi ipsa obcaecati enim, molestiae, natus culpa, eos et quisquam optio accusantium
+    asperiores
     cum? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deleniti, consequuntur. Repellendus suscipit omnis
-    consequuntur nostrum dolores accusantium est placeat, explicabo, sequi vero saepe asperiores facere delectus veniam
+    consequuntur nostrum dolores accusantium est placeat, explicabo, sequi vero saepe asperiores facere delectus
+    veniam
     odit, veritatis quos.
   </p>
 
@@ -31,13 +47,6 @@
 </section>
 
 <section class="container">
-  <h1 class="display-1">Display 1</h1>
-  <h1 class="display-2">Display 2</h1>
-  <h1 class="display-3">Display 3</h1>
-  <h1 class="display-4">Display 4</h1>
-
-  <hr />
-
   <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="space-around center">
     <div fxLayout fxLayoutAlign="start center" fxLayoutGap="0.5rem">
       <mat-form-field appearance="fill">
