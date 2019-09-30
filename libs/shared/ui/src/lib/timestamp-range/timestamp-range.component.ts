@@ -12,4 +12,6 @@ export class TimestampRangeComponent {
   @Input() start: Timestamp;
   /** End date of range - may be `null`. */
   @Input() end: Timestamp;
+  /** Format of transformed date. */
+  @Input() format = 'MMM yyyy';
 }
