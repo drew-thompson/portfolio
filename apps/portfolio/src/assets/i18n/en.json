@@ -51,19 +51,9 @@
     ]
   },
   "projects": {
-    "items": [
-      {
-        "title": "CommonGenius",
-        "start": "2018-04-22T10:00:00+0000",
-        "url": "commongenius"
-      },
-      {
-        "title": "FloriVR",
-        "start": "2017-11-15T10:00:00+0000",
-        "end": "2017-12-15T10:00:00+0000",
-        "url": "flori-vr"
-      }
-    ]
+    "detail": {
+      "backToProjects": "Back to Projects"
+    }
   },
   "libs": {
     "common": {

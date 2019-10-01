@@ -19,10 +19,6 @@ export class DetailComponent implements OnInit {
     this.project$ = this.route.data.pipe(map((data: { project: Project }) => data.project));
   }
 
-  getContext(project: Project): object {
-    return { $implicit: project };
-  }
-
   getTheme(project: Project): string {
     return project.color || '';
   }
