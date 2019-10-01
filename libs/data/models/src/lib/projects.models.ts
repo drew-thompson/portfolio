@@ -1,4 +1,5 @@
 import { Timestamp } from '@firebase/firestore-types';
+import { PaletteColor } from '@portfolio/data/enums';
 import { Entity } from './general.models';
 
 /**
@@ -9,6 +10,8 @@ export interface ProjectMin extends Entity {
   start: Timestamp;
   /** The end, if any, of this project. */
   end?: Timestamp;
+  /** The theme color to use when displaying this project. */
+  color?: PaletteColor;
 }
 
 // TODO: Implement full project model

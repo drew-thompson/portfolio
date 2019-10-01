@@ -3,70 +3,67 @@
 
 portfolio-project-card.portfolio-project-card,
 portfolio-post-card.portfolio-post-card {
-  display: block;
-  max-width: 300px;
-  cursor: pointer;
-  @include rounded();
+	display: block;
+	max-width: 300px;
+	cursor: pointer;
+	overflow: hidden;
+	@include rounded();
 
-  transform: scale(0.95);
-  transition: transform 100ms ease-in-out;
-  &:hover {
-    transform: scale(1);
-  }
+	transform: scale(0.95);
+	transition: transform 100ms ease-in-out;
+	&:hover {
+		transform: scale(1);
+	}
 }
 
 a {
-  &,
-  &:hover {
-    text-decoration: none;
-  }
+	&,
+	&:hover {
+		text-decoration: none;
+	}
 }
 
 h1 {
-  margin-bottom: 1rem;
+	margin-bottom: 1rem;
 }
 
 h2 {
-  @include color($neutral, 700);
+	@include color($neutral, 700);
 }
 
 section {
-  padding: 0 1rem;
+	padding: 0 1rem;
 }
 
 .avatar {
-  background-image: url('/assets/icons/icon-72x72.png');
-  background-size: cover;
+	background-image: url('/assets/icons/icon-72x72.png');
+	background-size: cover;
 }
 
 .carousel {
-  overflow-x: scroll;
-  $padding: 0.25rem;
-  padding-top: $padding;
-  padding-bottom: $padding;
-  margin-left: -$padding;
+	overflow-x: scroll;
+	$padding: 0.25rem;
+	padding-top: $padding;
+	padding-bottom: $padding;
+	margin-left: -$padding;
 }
 
 .me {
-  max-width: 100%;
+	max-width: 100%;
 
-  @include media-breakpoint-up(sm) {
-    max-height: 300px;
-  }
+	@include media-breakpoint-up(sm) {
+		max-height: 300px;
+	}
 }
 
 .splash {
-  margin-top: -$header-height-collapsed;
-  padding: ($header-height-collapsed + 2.5rem) 1rem 3rem 1rem;
-  z-index: -1;
-  width: 100vw;
-  @include background-color($purple, 500);
-  @include media-breakpoint-up(sm) {
-    background-color: transparent;
-    .container {
-      padding: 2rem;
-      @include rounded();
-      @include background-color($purple, 500);
-    }
-  }
+	@include splash($purple, 500);
+	@include media-breakpoint-up(sm) {
+		background-color: transparent;
+		.container {
+			padding: 2rem;
+			@include rounded();
+			@include background-color($purple, 500);
+		}
+	}
 }

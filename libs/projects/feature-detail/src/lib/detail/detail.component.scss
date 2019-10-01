@@ -1,13 +1,18 @@
-@import 'p-variables';
+@import 'p-variables', 'p-mixins';
 
 h1 {
-  margin-bottom: 0;
+	margin-bottom: 0;
+}
+
+h4 {
+	font-size: 110%;
+	text-transform: uppercase;
 }
 
 pre {
-  white-space: pre-line;
+	white-space: pre-line;
 }
 
-section.container {
-  min-height: calc(100vh - #{$footer-height} - #{$header-height-collapsed});
+.splash {
+	@include splash($green, 500);
 }

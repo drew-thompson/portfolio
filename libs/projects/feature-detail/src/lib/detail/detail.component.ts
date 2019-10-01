@@ -22,4 +22,8 @@ export class DetailComponent implements OnInit {
   getContext(project: Project): object {
     return { $implicit: project };
   }
+
+  getTheme(project: Project): string {
+    return project.color || '';
+  }
 }

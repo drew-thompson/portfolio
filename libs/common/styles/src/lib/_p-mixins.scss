@@ -1,4 +1,4 @@
-@import './palette';
+@import './palette', './p-variables';
 
 @mixin color($palette, $hue: 500) {
 	color: color($palette, $hue);
@@ -38,4 +38,22 @@
 
 @mixin shadow($size: 2px 2px 4px 0, $color: color($neutral, 900), $opacity: 0.15) {
 	box-shadow: $size rgba($color, $opacity);
+}
+
+@mixin splash($default, $hue: 500) {
+	@include background-color($default, $hue);
+	margin-top: -$header-height-collapsed;
+	padding: ($header-height-collapsed + 2.5rem) 1rem 3rem 1rem;
+	z-index: -1;
+	width: 100vw;
+
+	&.blue {
+		@include background-color($blue, 100);
+	}
+	&.purple {
+		@include background-color($purple, 500);
+	}
+	&.peach {
+		@include background-color($peach, 500);
+	}
 }
