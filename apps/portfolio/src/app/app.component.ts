@@ -1,22 +1,13 @@
 import { CdkScrollable } from '@angular/cdk/overlay';
-import {
-  AfterContentInit,
-  AfterViewInit,
-  ApplicationRef,
-  Component,
-  OnInit,
-  ViewChild
-} from '@angular/core';
-import { AngularFirestore } from '@angular/fire/firestore';
-import { AngularFireFunctions } from '@angular/fire/functions';
+import { AfterContentInit, AfterViewInit, ApplicationRef, Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
+import { NavigationEnd, Router } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
 import { TranslateService } from '@ngx-translate/core';
-import { Message, Person } from '@portfolio/api-interface';
 import { SidenavService } from '@portfolio/common/services';
 import { Link } from '@portfolio/data/models';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
-import { first, map, startWith, tap } from 'rxjs/operators';
+import { filter, first, map, startWith, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'portfolio-root',
@@ -27,9 +18,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   @ViewChild(MatSidenav, { static: true }) sidenav: MatSidenav;
   @ViewChild(CdkScrollable, { static: true }) sidenavContent: CdkScrollable;
 
-  hello$: any;
-  items$: Observable<Person[]>;
-
   dateClicked$: Subject<Date> = new BehaviorSubject<Date>(new Date(0));
   timestamp$: Subject<string> = new Subject<string>();
 
@@ -37,9 +25,8 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   links$: Observable<Link[]>;
 
   constructor(
+    private router: Router,
     private translate: TranslateService,
-    private db: AngularFirestore,
-    private fns: AngularFireFunctions,
     private appRef: ApplicationRef,
     private sidenavService: SidenavService,
     private updates: SwUpdate
@@ -48,8 +35,6 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
     this.appRef.isStable.pipe(first(stable => stable)).subscribe(() => {
       console.log('App is stable now');
-      const hello = this.fns.httpsCallable('api/hello');
-      this.hello$ = hello({ name: 'bob' }) as Observable<Message>;
     });
 
     this.updates.available.subscribe(a => {
@@ -61,25 +46,12 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
   }
 
   ngOnInit() {
-    const unsortedItems$ = this.db
-      .collection('items')
-      .valueChanges() as Observable<Person[]>;
-    const peopleAlphabetically = (a: Person, b: Person) => {
-      if (a.name < b.name) {
-        return -1;
-      }
-      if (a.name > b.name) {
-        return 1;
-      }
-      return 0;
-    };
-    this.items$ = unsortedItems$.pipe(
-      map(items => items.sort(peopleAlphabetically))
-    );
+    // this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe(() => this.scrollToUrlFragment());
   }
 
   ngAfterViewInit() {
     this.sidenavService.set(this.sidenav);
+    // this.scrollToUrlFragment();
   }
 
   ngAfterContentInit() {
@@ -99,5 +71,16 @@ export class AppComponent implements OnInit, AfterViewInit, AfterContentInit {
 
   private isAtTop(): boolean {
     return this.sidenavContent.measureScrollOffset('top') === 0;
+  }
+
+  private scrollToUrlFragment(): void {
+    const tree = this.router.parseUrl(this.router.url);
+    if (tree.fragment) {
+      const element = document.querySelector('#' + tree.fragment);
+      console.log(element);
+      if (element) {
+        element.scrollIntoView(true);
+      }
+    }
   }
 }

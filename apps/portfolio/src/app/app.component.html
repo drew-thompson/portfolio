@@ -1,28 +1,3 @@
-<!-- <div style="text-align:center">
-  <h1 translate>welcome</h1>
-  <img width="300" src="https://raw.githubusercontent.com/nrwl/nx/master/nx-logo.png" />
-</div>
-<div translate [translateParams]="{ message: hello$ | async | json }">message</div>
-
-<ul>
-  <ng-container *ngFor="let item of items$ | async">
-    <li>{{ item.name }}</li>
-  </ng-container>
-</ul>
-
-<div timeFromNow [created]="dateClicked$ | async" (timeUpdated)="timestamp$.next($event)" translate
-  [translateParams]="{ time: timestamp$ | async }">lastClicked</div>
-
-<button (click)="updateDateClicked()" type="button" translate>updateTime</button> -->
-
-<!-- <div style="z-index: 100; position: fixed; bottom: 2rem; left: 2rem; background-color: white; border-radius: 5px">
-  hi {{ atTop }}
-  <div (click)="atTop = !atTop">stop</div>
-</div> -->
-<!-- <ng-container *ngTemplateOutlet="header"></ng-container> -->
-
-<!-- <p style="height: 200vh"></p> -->
-
 <mat-sidenav-container>
   <mat-sidenav #sidenav mode="over" position="end">
     <portfolio-sidenav [links]="links$ | async"></portfolio-sidenav>
