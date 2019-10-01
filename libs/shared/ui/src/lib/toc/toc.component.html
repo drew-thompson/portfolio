@@ -1,0 +1,9 @@
+<ng-container *ngIf="key | translate as toc">
+    <h5>{{ toc.title }}</h5>
+    <ul>
+        <ng-container *ngFor="let item of toc.contents">
+            <li><a routerLink="." [fragment]="item.url">{{ item.title }}</a></li>
+        </ng-container>
+    </ul>
+
+</ng-container>
