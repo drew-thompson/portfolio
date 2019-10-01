@@ -1,10 +1,14 @@
 @import 'p-variables';
 
+:host {
+	margin-top: auto;
+}
+
 footer {
-  height: $footer-height;
+	height: $footer-height;
 }
 
 h6 {
-  display: inline-block;
-  margin: 0;
+	display: inline-block;
+	margin: 0;
 }
