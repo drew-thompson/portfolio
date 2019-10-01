@@ -28,7 +28,10 @@ const routes: Routes = [
   imports: [
     RouterModule.forRoot(routes, {
       preloadingStrategy: CustomPreloadingStrategy,
-      scrollPositionRestoration: 'enabled'
+      scrollPositionRestoration: 'enabled',
+      anchorScrolling: 'enabled',
+      scrollOffset: [0, 64],
+      relativeLinkResolution: 'corrected'
     })
   ],
   exports: [RouterModule]
