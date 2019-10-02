@@ -1,4 +1,4 @@
-<ng-container *ngIf="(project$ | async) as project; else missing">
+<ng-container *ngIf="project$ | async as project; else missing">
   <div class="splash" [ngClass]="getTheme(project)">
     <header class="container mat-typography">
       <h1>{{ project.title }}</h1>

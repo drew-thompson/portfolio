@@ -40,7 +40,7 @@
 	box-shadow: $size rgba($color, $opacity);
 }
 
-@mixin splash($default, $hue: 500) {
+@mixin splash($default: $green, $hue: 500) {
 	@include background-color($default, $hue);
 	margin-top: -$header-height-collapsed;
 	padding: ($header-height-collapsed + 2.5rem) 1rem 3rem 1rem;

@@ -1,18 +1,24 @@
-<div style="position: absolute; bottom: 100px; left: 1rem">
-    {{ isViewingDetail }}
-</div>
-<section *ngIf="!isViewingDetail" class="container" @listing>
-    <div class="row">
-        <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap=".95rem" class="col-12">
-
-            <ng-container *ngFor="let project of projects$ | async">
-                <portfolio-project-card [project]="project"></portfolio-project-card>
-            </ng-container>
-
-        </div>
+<div *ngIf="!isViewingDetail" @listing>
+    <div class="splash">
+        <header class="container mat-typography">
+            <h1>Projects</h1>
+            <h2>Hooray!</h2>
+        </header>
     </div>
-</section>
+
+    <section id="content" class="container">
+        <div class="row my-3">
+            <div fxLayout="column" fxLayout.gt-sm="row" fxLayoutAlign="start start" fxLayoutGap=".95rem" class="col-12">
+
+                <ng-container *ngFor="let project of projects$ | async">
+                    <portfolio-project-card [project]="project"></portfolio-project-card>
+                </ng-container>
+
+            </div>
+        </div>
+    </section>
+</div>
 
 <div [@detail]="isViewingDetail">
-    <router-outlet (activate)="isViewingDetail = true" (deactivate)="isViewingDetail = false"></router-outlet>
+    <router-outlet (activate)="onActivated()" (deactivate)="onDeactivated()"></router-outlet>
 </div>

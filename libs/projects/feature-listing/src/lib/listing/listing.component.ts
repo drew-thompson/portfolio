@@ -27,4 +27,12 @@ export class ListingComponent implements OnInit, AfterViewInit {
   ngAfterViewInit() {
     this.isViewingDetail = this.outlet.isActivated;
   }
+
+  onActivated(): void {
+    this.isViewingDetail = true;
+  }
+
+  onDeactivated(): void {
+    this.isViewingDetail = false;
+  }
 }
