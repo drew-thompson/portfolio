@@ -1,0 +1,9 @@
+@import 'p-mixins';
+
+:host {
+	@include card();
+}
+
+a:hover {
+	text-decoration: none;
+}

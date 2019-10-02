@@ -8,12 +8,7 @@ import { RouterModule } from '@angular/router';
     RouterModule.forChild([
       {
         path: '',
-        pathMatch: 'full',
         loadChildren: () => import('@portfolio/projects/feature-listing').then(m => m.ProjectsFeatureListingModule)
-      },
-      {
-        path: ':id',
-        loadChildren: () => import('@portfolio/projects/feature-detail').then(m => m.ProjectsFeatureDetailModule)
       }
     ])
   ]

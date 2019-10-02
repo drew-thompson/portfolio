@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  HostBinding,
-  Input
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
 import { Post } from '@portfolio/data/models';
 
 @Component({
@@ -15,5 +10,15 @@ import { Post } from '@portfolio/data/models';
 export class PostCardComponent {
   @HostBinding('class.portfolio-post-card') on = true;
 
+  /** Blog post to render. */
   @Input() post: Post;
+  /** Routerlink override. */
+  @Input() url: string;
+
+  getUrl(): string {
+    if (this.url) {
+      return this.url;
+    }
+    return this.post.url;
+  }
 }

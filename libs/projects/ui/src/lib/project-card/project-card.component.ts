@@ -1,9 +1,4 @@
-import {
-  ChangeDetectionStrategy,
-  Component,
-  HostBinding,
-  Input
-} from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostBinding, Input } from '@angular/core';
 import { ProjectMin } from '@portfolio/data/models';
 
 @Component({
@@ -14,5 +9,15 @@ import { ProjectMin } from '@portfolio/data/models';
 })
 export class ProjectCardComponent {
   @HostBinding('class.portfolio-project-card') on = true;
+  /** Project to render. */
   @Input() project: ProjectMin;
+  /** Routerlink override.  */
+  @Input() url: string;
+
+  getUrl(): string {
+    if (this.url) {
+      return this.url;
+    }
+    return this.project.url;
+  }
 }

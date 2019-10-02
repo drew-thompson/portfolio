@@ -16,5 +16,6 @@ export interface ProjectMin extends Entity {
 
 // TODO: Implement full project model
 export interface Project extends ProjectMin {
-  organization: string;
+  /** Extensive summary of this project. */
+  summary: string;
 }

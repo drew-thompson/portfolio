@@ -57,3 +57,18 @@
 		@include background-color($peach, 500);
 	}
 }
+
+@mixin card($max-width: 300px) {
+	max-width: $max-width;
+
+	display: block;
+	cursor: pointer;
+	overflow: hidden;
+	@include rounded();
+
+	transform: scale(0.95);
+	transition: transform 100ms ease-in-out;
+	&:hover {
+		transform: scale(1);
+	}
+}

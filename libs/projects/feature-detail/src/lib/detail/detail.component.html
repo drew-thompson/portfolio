@@ -11,9 +11,25 @@
   </div>
 
   <section id="content" class="container">
-    <pre>{{ project | json }}</pre>
+
+    <ng-container *ngIf="project.summary">
+      <h3 id="summary" class="subsection" translate>projects.detail.summary</h3>
+      <p [innerHTML]="project.summary"></p>
+    </ng-container>
+
+    <!-- <div>
+      Mobile responsive, cross-browser B2B & B2C products built in Angular with Nx. The main product utilizes <a
+        href="https://webrtc.org/" target="_blank">WebRTC</a> to facilitate 1-1 meetings between customers and
+      consultants. <br /><br />
+    </div> -->
+
+    <!-- <pre>{{ project | json }}</pre> -->
+
+
   </section>
 </ng-container>
+
+<!-- <router-outlet></router-outlet> -->
 
 <ng-template #missing>
   <header>

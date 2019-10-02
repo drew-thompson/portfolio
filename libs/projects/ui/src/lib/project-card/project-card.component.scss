@@ -1,3 +1,13 @@
+@import 'p-mixins';
+
+:host {
+	@include card();
+}
+
 mat-card-subtitle.mat-card-subtitle {
 	text-transform: uppercase;
+}
+
+a:hover {
+	text-decoration: none;
 }

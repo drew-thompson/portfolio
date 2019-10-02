@@ -1,21 +1,6 @@
 @import 'functions', 'variables', 'mixins';
 @import 'p-variables', 'p-mixins';
 
-portfolio-project-card.portfolio-project-card,
-portfolio-post-card.portfolio-post-card {
-	display: block;
-	max-width: 300px;
-	cursor: pointer;
-	overflow: hidden;
-	@include rounded();
-
-	transform: scale(0.95);
-	transition: transform 100ms ease-in-out;
-	&:hover {
-		transform: scale(1);
-	}
-}
-
 a {
 	&,
 	&:hover {

@@ -52,7 +52,22 @@
   },
   "projects": {
     "detail": {
-      "backToProjects": "Back to Projects"
+      "summary": "Summary"
+    },
+    "commongenius": {
+      "toc": {
+        "title": "Table of Contents",
+        "contents": [
+          {
+            "title": "User Registration",
+            "url": "signup"
+          },
+          {
+            "title": "Expert Registration",
+            "url": "expert-signup"
+          }
+        ]
+      }
     }
   },
   "libs": {
