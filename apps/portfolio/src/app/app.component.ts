@@ -1,13 +1,13 @@
 import { CdkScrollable } from '@angular/cdk/overlay';
 import { AfterContentInit, AfterViewInit, ApplicationRef, Component, OnInit, ViewChild } from '@angular/core';
 import { MatSidenav } from '@angular/material';
-import { NavigationEnd, Router } from '@angular/router';
+import { Router } from '@angular/router';
 import { SwUpdate } from '@angular/service-worker';
 import { TranslateService } from '@ngx-translate/core';
 import { SidenavService } from '@portfolio/common/services';
 import { Link } from '@portfolio/data/models';
 import { BehaviorSubject, Observable, Subject } from 'rxjs';
-import { filter, first, map, startWith, tap } from 'rxjs/operators';
+import { first, map, startWith, tap } from 'rxjs/operators';
 
 @Component({
   selector: 'portfolio-root',
