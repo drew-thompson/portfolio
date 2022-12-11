@@ -48,7 +48,7 @@
     "@angular/service-worker": "^8.0.0",
     "@nestjs/common": "^6.2.4",
     "@nestjs/core": "^6.2.4",
-    "@nestjs/platform-express": "^6.2.4",
+    "@nestjs/platform-express": "^9.2.1",
     "@ngx-translate/core": "^11.0.1",
     "@ngx-translate/http-loader": "^4.0.0",
     "@nrwl/angular": "8.5.0",
